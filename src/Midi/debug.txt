@@ -1,0 +1,4 @@
+UnitTimeMods
+  UnitAbsWarp [m: 34,  1+  0 % 1] [m: 33,  1+  1 % 2] (  6+     0 % 1)
+  UnitPause [m:  7,  2+  1 % 2] (  0+     1 % 8)
+  UnitPause [m: 16,  1+  0 % 1] (  0+     1 % 8)

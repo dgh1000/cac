@@ -1,0 +1,14 @@
+2013-11-11 00:17:46.8265422 UTC|varying-alignment-trunk.mp3|d:\bk-man\ralph-atm
+2013-11-08 18:43:42.738972 UTC|strauch-jaw.mp3|d:\bk-man\ralph-atm
+2013-11-11 00:17:46.7305367 UTC|spinal-flexion.mp3|d:\bk-man\ralph-atm
+2013-11-11 00:17:46.6715333 UTC|spinal-extension.mp3|d:\bk-man\ralph-atm
+2013-11-08 18:43:42.6999698 UTC|softening-rib-cage.mp3|d:\bk-man\ralph-atm
+2013-11-08 18:43:42.6579674 UTC|softening-mouth.mp3|d:\bk-man\ralph-atm
+2013-11-11 00:17:46.6215305 UTC|sensing-head-in-space.mp3|d:\bk-man\ralph-atm
+2013-11-11 00:17:46.5465262 UTC|reaching-with-whole-body.mp3|d:\bk-man\ralph-atm
+2013-11-11 00:17:46.4745221 UTC|pelvic-clock.mp3|d:\bk-man\ralph-atm
+2013-11-08 18:43:42.5999641 UTC|making-waves.mp3|d:\bk-man\ralph-atm
+2013-11-11 00:17:46.3895172 UTC|freeing-hips-pelvis.mp3|d:\bk-man\ralph-atm
+2013-11-08 18:43:42.790975 UTC|connecting-fingers.mp3|d:\bk-man\ralph-atm
+2013-11-11 00:17:46.3075125 UTC|cerebral-spinal-pulse.mp3|d:\bk-man\ralph-atm
+2013-11-11 00:17:46.2705104 UTC|breathing-throughout-chest.mp3|d:\bk-man\ralph-atm

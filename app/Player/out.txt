@@ -1,0 +1,65 @@
+Doc:
+  Tempos:
+    msr:1 tempo:60.0 flag:True
+    msr:2 tempo:60.0 flag:False
+    msr:3 tempo:60.0 flag:False
+  Parts:
+    Part P1:
+      PartInfo:
+        Id: P1-I1 Chan: 1
+      Part:
+        MeasureInfo's:
+          MeasureInfo 
+            time sig: 4/4
+            tempo: Just 60.0
+          MeasureInfo 
+            time sig: 4/4
+            tempo: Nothing
+          MeasureInfo 
+            time sig: 4/4
+            tempo: Nothing
+        Notes:
+          Notes at Loc msr:1 beat:1 % 1
+            Note:
+              Pitch midi:65 step:3 alt:0 oct:4
+              End: Loc msr:1 beat:2 % 1
+              Id: Nothing
+              Tie start/stop: False False
+              Effective dyn: MF
+              Slur notations: 
+          Notes at Loc msr:1 beat:2 % 1
+            Note:
+              Pitch midi:67 step:4 alt:0 oct:4
+              End: Loc msr:1 beat:3 % 1
+              Id: Nothing
+              Tie start/stop: False False
+              Effective dyn: MF
+              Slur notations: 
+          Notes at Loc msr:1 beat:3 % 1
+            Note:
+              Pitch midi:69 step:5 alt:0 oct:4
+              End: Loc msr:1 beat:4 % 1
+              Id: Nothing
+              Tie start/stop: False False
+              Effective dyn: MF
+              Slur notations: 
+          Notes at Loc msr:1 beat:4 % 1
+            Note:
+              Pitch midi:69 step:5 alt:0 oct:4
+              End: Loc msr:2 beat:3 % 2
+              Id: Nothing
+              Tie start/stop: True False
+              Effective dyn: MF
+              Slur notations: 
+        Slurs:
+        Wedges:
+          At: Loc msr:1 beat:2 % 1
+            type: crescendo  end: Loc msr:1 beat:4 % 1
+          At: Loc msr:2 beat:7 % 2
+            type: diminuendo  end: Loc msr:2 beat:4 % 1
+        Words: <words> in <direction> element:
+          At loc: Loc msr:2 beat:1 % 1
+            marcato
+            ab
+          At loc: Loc msr:2 beat:5 % 2
+            abci

@@ -1,0 +1,6 @@
+This directory, CLib, will be a collection of useful modules
+
+-- for what? --
+
+well mostly pvs analysis, but anything I've been doing in the parent 
+directory MiscCsound

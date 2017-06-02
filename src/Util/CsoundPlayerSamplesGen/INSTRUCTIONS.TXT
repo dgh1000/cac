@@ -1,0 +1,43 @@
+
+- generate initial sample files
+
+  - pick instrument from among Garritan instruments
+  - decide which pitches to use for samples
+    - make files
+      - start aria; load the instrument
+      - for each pitch P
+        - make a file with a few seconds of that pitch by 
+          - set audio output file in aria
+            (name this file pinitial<P>.wav; for instance pinital36.wav)
+	    (choose the direction of the file as
+            c:\Temp\ariaOutput\<instrument name>)
+          - start aria recording
+          - with mouse, press the key for a few seconds.
+            PRESS IN THE MIDDLE OF THE KEY. PROBABLY BEST TO STICK TO
+            WHITE KEYS so we know that we are pressing in the middle of
+            the key (I'm not sure how Aria decides where a black 
+            press happens)
+          - stop aria recording
+  - edit the haskell program trimSamples.hs so that the input/output directory
+    is the same place you put the samples above. you may wish
+    to edit other configuration such as the trim times (begin and end
+    of interval of input wav which is maintained)
+
+  - run trimSamples.hs (load in ghci and type main)
+  
+  - this will make file p<midi pitch>.wav for every input file,
+    storing it in the current directory - you will need to copy these
+    files somewhere more sensible
+
+- generate csound code and haskell code
+
+  - edit haskell program codeGen.hs to point to the directory used
+    above. Edit it to set the base csound table number
+
+  - run it, and it will put code in the current directory in the
+    file "output.txt"
+
+  - this will include a haskell-syntax list of numbers which is the
+    list of pitches used, and csound code that goes in the csd for 
+    loading each of these files as tables
+

@@ -1,0 +1,74 @@
+
+need to do experiment comparing (1) single oscillator with harmonic spectrum
+to (2) many sine wave oscillators
+
+  looks like we can use instr 7 for both. single oscillator with configurable
+  table 
+
+  what do we have in ToCsound.hs?
+
+
+need better partial generation algorithm
+
+  decrease more rapidly between 2KHz and 7KHz, less rapidly after that?
+
+    requires knowing frequency of partial. need stretch partial 
+
+  use 1/n^2 but apply a filter? 
+
+what methods do I want to demonstrate?
+
+  individual partials
+
+    methods of jitter
+
+    stretch partials versus harmonic based
+
+  fixed waveform
+
+  waveguide with same fixed waveform initialization
+
+what music do I want to demonstrate?
+
+  two selections of my own composition and a few intervals in the bass
+  including fifths
+
+how much experimentation do I think I need to do before this is ready?
+
+  individual partials
+
+    methods of jitter
+
+      amount of jitter at each frequency
+
+      randomness? according to a pattern?
+
+    stretch tuning
+
+  fixed waveform
+
+    envelope on filter
+    
+how am I going to organize my data?
+
+  on web page: will list three selections in columns across the top. rows
+  will be pianoteq, fixed waveform, and individual partials. in each entry
+  for csound generation, there will be a csd.
+
+  on disk: everything in one folder. use naming scheme: sel1_pianoteq.wav,
+  sel2_harmonic.wav, sel3_nonharm1.wav, etc. Will be a txt file with notes on
+  what everything means and a copy of config.txt. also sel2_harmonic.csd
+
+  theoretically I could create backup of state of all code associated with
+  each run, but that would require a lot of code, and it will all change
+  frequently anyway
+
+going forward now:
+
+  try to make harmonic version as compatible as possible with nonharmonic
+  version. so same partial strengths. oh should jitter the fundamental
+  frequency in similar way. 
+
+  start by rewriting instrument 8 or whatever it was. check what params it
+  needs. design config for it. code it in haskell. 
+

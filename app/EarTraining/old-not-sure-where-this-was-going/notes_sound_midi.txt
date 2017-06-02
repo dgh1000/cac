@@ -1,0 +1,15 @@
+
+data T = MIDIEvent T
+       | ...
+
+recursive data definition? no a constructor for T 
+maybeMIDIEvent : probably converts only if T is a midi event
+
+maybeVoice :: T -> Maybe (Channel, T) : Channel plus some event
+TrackEvent = (ElapsedTime, T) : seems to be used to indicate time
+  between events
+get :: C parser => Fallible (T parser) T
+
+for parser being instance of C, 
+
+toFile :: FilePath -> T -> IO ()

@@ -1,0 +1,22 @@
+
+generate and test will be our main method. this is generalizable to many forms
+of tests, which can be combined and weighted in different ways. It can also be
+combined with dramatic shapes and large-scale patterns.
+
+vertical tests
+
+  defns
+
+    verticals are groups of pitches that occur close together in time, but
+    their order is not important.
+
+  pitch class sets: searching for distinct occurrences of pitch-class sets,
+  weighting on the number of occurrences
+
+  
+
+  weighting different intervalic content
+
+  weighting specific notes
+
+  

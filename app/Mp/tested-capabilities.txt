@@ -1,0 +1,59 @@
+
+marks
+
+  T
+
+  <>
+
+  ><
+
+  stac
+
+  variable setting and modification
+
+  ramps
+
+  ps
+
+  pat: (will throw an error if found in the score)
+
+  trates: (doesn't parse, currently)
+
+  splice mark: will parse but then are ignored completely, will not throw an
+    error
+
+  warps: tested
+
+  abs warps: tested
+
+  arppegio rates
+
+  multiple pause
+
+  rit. pause
+
+articulations
+
+  staccato
+
+  accent
+
+  tenuto
+
+
+alterations
+
+  legato overlap
+
+  trunction
+
+config commands/params
+
+  piano: velDelta
+
+cmd line
+
+  finding three blanks
+
+  s
+

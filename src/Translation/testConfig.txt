@@ -1,0 +1,38 @@
+
+[meta instr:piano name:"piano1" 
+      [staves "Piano 1" "Piano 2"] 
+      [dests ["Piano 1" 0 1]
+             ["Piano 2" 0 2]]
+   velDelta:3
+   legatoOverlap:J:0.1
+]      
+
+[meta instr:qlSoloCello name:"cello"
+
+     [- we can have more than one staff in this instrument: notes from 
+        any staff will be directed to the dests specified below. notes that
+        "stomp" on each other (overlapping end/begin of same pitch) may
+        occur, and most will be caught in AlterTimes.hs, which will throw
+        an error  ]
+     [staves "Solo Cello 1" "Solo Cello 2"]
+     
+     [dests [arco  0 1]
+            [short 0 2] 
+            [pizz  0 3]
+            [expr  0 4]
+     ]
+     [- not sure how to configure legato, eventually need a rich configuration
+        to express how notes under slurs vs not, whether instrument is in
+        "legato" mode or not, whether to alter legato mode, how long to 
+        make overlap (which may depend on the dest or keyswitch) ]
+
+     legatoOverlap:Nothing
+     sepSame:J:0.01
+]
+     
+
+
+
+
+[timing-variation minLen:4 maxLen:8 ratio1:0.95 ratio2:1.05 
+                                    delta1:-0.3 delta2:0.3]

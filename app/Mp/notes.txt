@@ -1,0 +1,148 @@
+
+
+structure of code: restructuring now
+
+modules and what is present
+
+  XmlDoc
+
+    XmlDocData.hs, XmlDocExport.hs, ShowXmlDoc.hs,  
+
+    entry point: ParseXml.hs, parseXScore
+
+    okay this isn't bad, and not important
+
+  Score
+
+    ScoreData.hs, ShowScore.hs, XmlToScore.hs, ParseWords.hs, ScoreUtil.hs
+
+    okay we should change ParseWords to ParseMarks
+
+    what is in ScoreUtil.hs?
+
+      followingRepeats, and helper functions. that's it. maybe can get rid of
+      them
+
+  Translation
+
+    general idea is to have algorithms that produce MIDI from a Score but are
+    not instrument specific.
+    
+    AlterTimes.hs, ApplyTimeMod.hs, LoudnessFunc.hs, 
+    MakePattern.hs (moved to _MakePattern.hs because not currently using),
+    Mod.hs (moved to _Mod.hs because not currently using)
+    ShowTranslation.hs, 
+    Splice.hs (moved to _Splice.hs because not currently using)
+    ToUnitTimeMods.hs, Translation.hs, TranslationUtil.hs,
+    Trill.hs, ValidateConfig.hs, Warp.hs (moved to _Warp.hs)
+
+    TranslationUtil.hs
+
+      onOffTr, noteOnOffTr, chordOnOffTr, updateMi, isShort, isArp, 
+      tuMapLookup, hasModifier, getLoudnessFuncsTr, 
+      trMapLookup, getTimeMapTr, 
+
+      so let's make Instruments the entry point, and it calls Translation to
+      help it
+
+      where each thing in TranslationUtil used inside Translation?
+
+        onOffTr, noteOnOffTr, chordOnOffTr: only elsewhere in TranslationUtil
+
+        updateMi: used in Translation.hs in many places
+
+          can move to Instruments
+
+        isShort and isArp: used in Instruments, not in Translation
+
+          can move to Instruments
+
+        hasModifier: used in LoudnessFunc, some in Instruments
+  
+          make custom version inside LoudnessFunc, put another version in
+          Instruments
+
+        getLoudnessFuncsTr, getTimeMapTr: used in _Mod.hs, nowhere in 
+        Instruments
+
+
+SPECIFYING MIDI CHANNELS in shape statements
+
+the current model
+
+  one "instrument" per staff
+
+    everything on a given staff is a violin or a piano or an organ even if
+    there are multiple channels that the instrument can send to
+
+  an "instrument" can send notes to multiple channels
+
+    violin made of several articulations. an organ might use different stops
+
+  each "instrument" is assigned to a set of channels, but those sets cannot
+  overlap
+
+    generally, in simulating real instruments, there is one type of instrument
+    per staff, and any given articulation is useful only for one kind of
+    instrument
+
+how might the moog break this?
+
+  there are a set of moog patches P, and a set of staves S. 
+
+  if we are arranging a bach fugue for moog, generally there is AT LEAST one
+  staff per voice of the original composition. (this will separate voices for
+  greatest ease in specifying expression)
+
+  any staff S might go to any patch P, changing throughout the composition
+
+    the situation is different from acoustic orchestra. in an orchestra, a
+    "patch" -- i.e. an instrument -- only covers a limited range, and so the
+    lowest voice of the fugue is not likely to ever go to a piccolo.
+
+    however, a moog instrument is generally full range, and could receive
+    events from any staff (and it might sound quite different in top versus
+    bottom register, helping to differentiate the staves)
+
+    
+how do we organize moog patches?
+
+  any given reaper file will have a number of moogs (each one will be
+  receiving a couple of channels, one or more for notes and one or more for
+  control events)
+
+    need custom Reaper plug-in in order to process two or three channels
+    rather than all of them - I don't like depending on plug-ins that may or
+    may not work in the future, but it's probably okay -- think of all my
+    music creation as "just for now" and be sure to record a final version as
+    a soundfile -- a wav or mp3 is a future-proof format, right?
+
+  we need a way to direct notes to a particular moog patch
+
+    clearly a mark. we want any staff to be able to go to any patch. note that
+    the moog instruments on the various tracks in Reaper will be wired in a
+    way that can't change during the performance, but almost everything about
+    the parameters CAN change. So a wire providing a 'modulate' input can be
+    effectively disconnected by setting the mod strength to zero. an envelope
+    can be flatlined or even made into a reverse shape by changing parameters
+
+    what means "we think about this the least"? well we define a patch as a
+    combination of the moog hardwired configuration and fundamental parameters
+    that deeply affect the overall sound and probably won't change during
+    performance. 
+
+    future proof: we want the configuration to describe the channels and
+    configurations in terms of conceptually what these moog hard patches and
+    soft patches sound like overall 
+
+    
+
+  
+
+
+what kinds of channels do various instruments need?
+
+  QL instruments need the various "articulations" such as pizz. and arco. so
+  everything associated with a staff is considered a violin
+
+  

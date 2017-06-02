@@ -1,0 +1,385 @@
+Score
+Marks
+  [m:  1,  1+  0 % 1]
+    Piano-staff1
+      StacDur 7.0e-2
+    Piano-staff2
+      StacDur 7.0e-2
+  [m:  2,  4+  0 % 1]
+    Piano-staff1
+      Pause (Right 0.2)
+  [m:  5,  1+  0 % 1]
+    Piano-staff1
+      SymbolMark "trill-flat" 1
+  [m:  5,  2+  0 % 1]
+    Piano-staff1
+      SymbolMark "trill-natural" 1
+  [m:  5,  3+  0 % 1]
+    Piano-staff1
+      SymbolMark "trill-sharp" 1
+  [m:  6,  1+  0 % 1]
+    Piano-staff1
+      SetTempo 80.0
+  [m: 10,  2+  0 % 1]
+    Piano-staff1
+      SetTempo 70.0
+Staves
+  Piano-staff1
+    Dynamics
+      [m:  2,  1+  0 % 1]
+        SimpleDyn  5 voice:1
+      [m:  2,  4+  0 % 1]
+        SimpleDyn  4 voice:1
+      [m:  7,  1+  0 % 1]
+        SimpleDyn  5 voice:1
+      [m:  8,  4+  1 % 2]
+        SimpleDyn  3 voice:1
+      [m:  9,  3+  1 % 2]
+        SimpleDyn  5 voice:1
+      [m: 10,  2+  0 % 1]
+        SimpleDyn  6 voice:1
+      [m: 10,  2+  1 % 2]
+        SimpleDyn  3 voice:1
+    Hairpins
+       [m:  9,  4+  0 % 1]  Crescendo end:[m: 10,  1+  0 % 1]
+    Pedal events
+    max true end: [m: 11,  2+  1 % 2]
+    slurs
+    [m:  2,  1+  0 % 1]
+      Voi 1 chord: end:[m:  2,  1+  1 % 2]  Accent
+        NSingles
+          74: midi:74 step:1 alter: 0 tieStart: No trueEnd:[m:  2,   3 % 2]
+    [m:  2,  1+  1 % 2]
+      Voi 1 chord: end:[m:  2,  2+  0 % 1]  Staccato
+        NSingles
+          72: midi:72 step:0 alter: 0 tieStart: No trueEnd:[m:  2,   2 % 1]
+    [m:  2,  2+  0 % 1]
+      Voi 1 chord: end:[m:  2,  2+  1 % 2]  Staccato
+        NSingles
+          71: midi:71 step:6 alter: 0 tieStart: No trueEnd:[m:  2,   5 % 2]
+    [m:  2,  2+  1 % 2]
+      Voi 1 chord: end:[m:  2,  3+  0 % 1] 
+        NSingles
+          77: midi:77 step:3 alter: 0 tieStart: No trueEnd:[m:  2,   3 % 1]
+    [m:  2,  3+  0 % 1]
+      Voi 1 chord: end:[m:  2,  4+  0 % 1] 
+        NSingles
+          79: midi:79 step:4 alter: 0 tieStart: No trueEnd:[m:  2,   4 % 1]
+    [m:  2,  4+  0 % 1]
+      Voi 1 chord: end:[m:  2,  4+  1 % 2] 
+        NSingles
+          80: midi:80 step:4 alter: 1 tieStart: No trueEnd:[m:  2,   9 % 2]
+    [m:  3,  1+  0 % 1]
+      Voi 1 chord: end:[m:  3,  2+  0 % 1] 
+        NSingles
+          65: midi:65 step:3 alter: 0 tieStart: No trueEnd:[m:  3,   2 % 1]
+    [m:  3,  2+  0 % 1]
+      Voi 1 chord: end:[m:  3,  3+  0 % 1] 
+        NSingles
+          67: midi:67 step:4 alter: 0 tieStart: No trueEnd:[m:  3,   3 % 1]
+    [m:  3,  3+  0 % 1]
+      Voi 1 chord: end:[m:  3,  4+  0 % 1] 
+        NSingles
+          69: midi:69 step:5 alter: 0 tieStart: No trueEnd:[m:  3,   4 % 1]
+    [m:  5,  1+  0 % 1]
+      Voi 1 chord: end:[m:  5,  2+  0 % 1] 
+        NTrill False
+          m1
+            72: midi:72 step:0 alter: 0 tieStart: No trueEnd:[m:  5,   2 % 1]
+          m2
+            73: midi:73 step:1 alter:-1 tieStart: No trueEnd:[m:  5,   2 % 1]
+    [m:  5,  2+  0 % 1]
+      Voi 1 chord: end:[m:  5,  3+  0 % 1] 
+        NTrill False
+          m1
+            72: midi:72 step:0 alter: 0 tieStart: No trueEnd:[m:  5,   3 % 1]
+          m2
+            74: midi:74 step:1 alter: 0 tieStart: No trueEnd:[m:  5,   3 % 1]
+    [m:  5,  3+  0 % 1]
+      Voi 1 chord: end:[m:  5,  4+  0 % 1] 
+        NTrill False
+          m1
+            72: midi:72 step:0 alter: 0 tieStart: No trueEnd:[m:  5,   4 % 1]
+          m2
+            75: midi:75 step:1 alter: 1 tieStart: No trueEnd:[m:  5,   4 % 1]
+    [m:  7,  1+  0 % 1]
+      Voi 1 chord: end:[m:  7,  1+  1 % 2] 
+        NSingles
+          74: midi:74 step:1 alter: 0 tieStart: No trueEnd:[m:  7,   3 % 2]
+    [m:  7,  1+  1 % 2]
+      Voi 1 chord: end:[m:  7,  2+  0 % 1]  Staccato
+        NSingles
+          73: midi:73 step:0 alter: 1 tieStart: No trueEnd:[m:  7,   2 % 1]
+    [m:  7,  2+  0 % 1]
+      Voi 1 chord: end:[m:  7,  2+  1 % 2]  Staccato
+        NSingles
+          71: midi:71 step:6 alter: 0 tieStart: No trueEnd:[m:  7,   5 % 2]
+    [m:  7,  2+  1 % 2]
+      Voi 1 chord: end:[m:  7,  3+  0 % 1] 
+        NSingles
+          77: midi:77 step:3 alter: 0 tieStart:Yes trueEnd:[m:  7,   4 % 1]
+    [m:  7,  4+  0 % 1]
+      Voi 1 chord: end:[m:  7,  4+  1 % 2] 
+        NSingles
+          74: midi:74 step:1 alter: 0 tieStart: No trueEnd:[m:  7,   9 % 2]
+    [m:  7,  4+  1 % 2]
+      Voi 1 chord: end:[m:  8,  1+  0 % 1]  Staccato
+        NSingles
+          73: midi:73 step:0 alter: 1 tieStart: No trueEnd:[m:  8,   1 % 1]
+    [m:  8,  1+  0 % 1]
+      Voi 1 chord: end:[m:  8,  1+  1 % 2] 
+        NSingles
+          71: midi:71 step:6 alter: 0 tieStart: No trueEnd:[m:  8,   3 % 2]
+    [m:  8,  1+  1 % 2]
+      Voi 1 chord: end:[m:  8,  1+  3 % 4] 
+        NSingles
+          79: midi:79 step:4 alter: 0 tieStart: No trueEnd:[m:  8,   7 % 4]
+    [m:  8,  1+  3 % 4]
+      Voi 1 chord: end:[m:  8,  2+  0 % 1] 
+        NSingles
+          77: midi:77 step:3 alter: 0 tieStart: No trueEnd:[m:  8,   2 % 1]
+    [m:  8,  2+  0 % 1]
+      Voi 1 chord: end:[m:  8,  3+  0 % 1] 
+        NSingles
+          77: midi:77 step:3 alter: 0 tieStart: No trueEnd:[m:  8,   3 % 1]
+    [m:  8,  3+  0 % 1]
+      Voi 1 chord: end:[m:  8,  3+  1 % 2]  Staccato Tenuto
+        NSingles
+          77: midi:77 step:3 alter: 0 tieStart: No trueEnd:[m:  8,   7 % 2]
+    [m:  8,  4+  1 % 2]
+      Voi 1 chord: end:[m:  9,  1+  0 % 1] 
+        NSingles
+          62: midi:62 step:1 alter: 0 tieStart:Yes trueEnd:[m:  9,   3 % 2]
+    [m:  9,  1+  1 % 2]
+      Voi 1 chord: end:[m:  9,  2+  0 % 1] 
+        NSingles
+          59: midi:59 step:6 alter: 0 tieStart: No trueEnd:[m:  9,   2 % 1]
+    [m:  9,  2+  0 % 1]
+      Voi 1 chord: end:[m:  9,  2+  1 % 2]  Accent
+        NSingles
+          62: midi:62 step:1 alter: 0 tieStart: No trueEnd:[m:  9,   5 % 2]
+    [m:  9,  3+  1 % 2]
+      Voi 1 chord: end:[m:  9,  4+  0 % 1] 
+        NSingles
+          74: midi:74 step:1 alter: 0 tieStart: No trueEnd:[m:  9,   4 % 1]
+    [m:  9,  4+  0 % 1]
+      Voi 1 chord: end:[m:  9,  4+  1 % 2] 
+        NSingles
+          73: midi:73 step:0 alter: 1 tieStart: No trueEnd:[m:  9,   9 % 2]
+    [m:  9,  4+  1 % 2]
+      Voi 1 chord: end:[m: 10,  1+  0 % 1] 
+        NSingles
+          71: midi:71 step:6 alter: 0 tieStart: No trueEnd:[m: 10,   1 % 1]
+    [m: 10,  1+  0 % 1]
+      Voi 1 chord: end:[m: 10,  2+  0 % 1] 
+        NSingles
+          77: midi:77 step:3 alter: 0 tieStart: No trueEnd:[m: 10,   2 % 1]
+    [m: 10,  2+  0 % 1]
+      Voi 1 chord: end:[m: 10,  2+  1 % 2]  Staccato
+        NSingles
+          80: midi:80 step:4 alter: 1 tieStart: No trueEnd:[m: 10,   5 % 2]
+    [m: 10,  2+  1 % 2]
+      Voi 1 chord: end:[m: 10,  3+  0 % 1] 
+        NSingles
+          74: midi:74 step:1 alter: 0 tieStart: No trueEnd:[m: 10,   3 % 1]
+    [m: 10,  3+  0 % 1]
+      Voi 1 chord: end:[m: 10,  4+  0 % 1] 
+        NSingles
+          71: midi:71 step:6 alter: 0 tieStart: No trueEnd:[m: 10,   4 % 1]
+    [m: 10,  4+  0 % 1]
+      Voi 1 chord: end:[m: 10,  4+  1 % 2] 
+        NSingles
+          70: midi:70 step:6 alter:-1 tieStart: No trueEnd:[m: 10,   9 % 2]
+    [m: 10,  4+  1 % 2]
+      Voi 1 chord: end:[m: 11,  1+  0 % 1] 
+        NSingles
+          69: midi:69 step:5 alter: 0 tieStart: No trueEnd:[m: 11,   1 % 1]
+    [m: 11,  1+  1 % 2]
+      Voi 1 chord: end:[m: 11,  2+  0 % 1] 
+        NSingles
+          72: midi:72 step:0 alter: 0 tieStart:Yes trueEnd:[m: 11,   5 % 2]
+  Piano-staff2
+    Dynamics
+      [m:  2,  1+  0 % 1]
+        SimpleDyn  5 voice:1
+      [m:  2,  4+  0 % 1]
+        SimpleDyn  4 voice:1
+      [m:  7,  1+  0 % 1]
+        SimpleDyn  4 voice:1
+      [m:  8,  3+  1 % 2]
+        SimpleDyn  5 voice:1
+      [m:  9,  3+  1 % 2]
+        SimpleDyn  4 voice:1
+      [m: 10,  2+  0 % 1]
+        SimpleDyn  6 voice:1
+      [m: 10,  2+  1 % 2]
+        SimpleDyn  3 voice:1
+    Hairpins
+       [m:  9,  4+  0 % 1]  Crescendo end:[m: 10,  1+  0 % 1]
+    Pedal events
+    max true end: [m: 11,  2+  1 % 2]
+    slurs
+    [m:  2,  1+  0 % 1]
+      Voi 1 chord: end:[m:  2,  1+  1 % 2]  Accent
+        NSingles
+          59: midi:59 step:6 alter: 0 tieStart: No trueEnd:[m:  2,   3 % 2]
+    [m:  2,  1+  1 % 2]
+      Voi 1 chord: end:[m:  2,  2+  0 % 1]  Staccato
+        NSingles
+          63: midi:63 step:2 alter:-1 tieStart: No trueEnd:[m:  2,   2 % 1]
+    [m:  2,  2+  0 % 1]
+      Voi 1 chord: end:[m:  2,  2+  1 % 2]  Staccato
+        NSingles
+          67: midi:67 step:4 alter: 0 tieStart: No trueEnd:[m:  2,   5 % 2]
+    [m:  2,  2+  1 % 2]
+      Voi 1 chord: end:[m:  2,  3+  0 % 1] 
+        NSingles
+          56: midi:56 step:4 alter: 1 tieStart: No trueEnd:[m:  2,   3 % 1]
+    [m:  2,  3+  0 % 1]
+      Voi 1 chord: end:[m:  2,  3+  1 % 2]  Staccato
+        NSingles
+          52: midi:52 step:2 alter: 0 tieStart: No trueEnd:[m:  2,   7 % 2]
+    [m:  2,  3+  1 % 2]
+      Voi 1 chord: end:[m:  2,  4+  0 % 1]  Staccato Accent
+        NSingles
+          47: midi:47 step:6 alter: 0 tieStart: No trueEnd:[m:  2,   4 % 1]
+    [m:  2,  4+  0 % 1]
+      Voi 1 chord: end:[m:  2,  4+  1 % 2] 
+        NSingles
+          53: midi:53 step:3 alter: 0 tieStart: No trueEnd:[m:  2,   9 % 2]
+    [m:  7,  1+  0 % 1]
+      Voi 1 chord: end:[m:  7,  1+  1 % 2] 
+        NSingles
+          59: midi:59 step:6 alter: 0 tieStart: No trueEnd:[m:  7,   3 % 2]
+    [m:  7,  1+  1 % 2]
+      Voi 1 chord: end:[m:  7,  2+  0 % 1]  Staccato
+        NSingles
+          63: midi:63 step:2 alter:-1 tieStart: No trueEnd:[m:  7,   2 % 1]
+    [m:  7,  2+  0 % 1]
+      Voi 1 chord: end:[m:  7,  2+  1 % 2]  Staccato
+        NSingles
+          67: midi:67 step:4 alter: 0 tieStart: No trueEnd:[m:  7,   5 % 2]
+    [m:  7,  2+  1 % 2]
+      Voi 2 chord: end:[m:  7,  3+  0 % 1] 
+        NSingles
+          56: midi:56 step:4 alter: 1 tieStart:Yes trueEnd:[m:  7,   4 % 1]
+    [m:  7,  3+  0 % 1]
+      Voi 1 chord: end:[m:  7,  3+  1 % 2]  Staccato
+        NSingles
+          59: midi:59 step:6 alter: 0 tieStart: No trueEnd:[m:  7,   7 % 2]
+    [m:  7,  3+  1 % 2]
+      Voi 1 chord: end:[m:  7,  4+  0 % 1]  Staccato
+        NSingles
+          67: midi:67 step:4 alter: 0 tieStart: No trueEnd:[m:  7,   4 % 1]
+    [m:  7,  4+  0 % 1]
+      Voi 1 chord: end:[m:  7,  4+  1 % 2] 
+        NSingles
+          59: midi:59 step:6 alter: 0 tieStart: No trueEnd:[m:  7,   9 % 2]
+    [m:  7,  4+  1 % 2]
+      Voi 1 chord: end:[m:  8,  1+  0 % 1]  Staccato
+        NSingles
+          63: midi:63 step:2 alter:-1 tieStart: No trueEnd:[m:  8,   1 % 1]
+    [m:  8,  1+  0 % 1]
+      Voi 1 chord: end:[m:  8,  1+  1 % 2] 
+        NSingles
+          67: midi:67 step:4 alter: 0 tieStart: No trueEnd:[m:  8,   3 % 2]
+    [m:  8,  2+  0 % 1]
+      Voi 1 chord: end:[m:  8,  2+  1 % 2]  Staccato Accent
+        NSingles
+          68: midi:68 step:4 alter: 1 tieStart: No trueEnd:[m:  8,   5 % 2]
+          71: midi:71 step:6 alter: 0 tieStart: No trueEnd:[m:  8,   5 % 2]
+    [m:  8,  2+  1 % 2]
+      Voi 1 chord: end:[m:  8,  3+  0 % 1]  Staccato Accent
+        NSingles
+          70: midi:70 step:6 alter:-1 tieStart: No trueEnd:[m:  8,   3 % 1]
+          74: midi:74 step:1 alter: 0 tieStart: No trueEnd:[m:  8,   3 % 1]
+    [m:  8,  3+  0 % 1]
+      Voi 1 chord: end:[m:  8,  3+  1 % 2]  Staccato Tenuto
+        NSingles
+          71: midi:71 step:6 alter: 0 tieStart: No trueEnd:[m:  8,   7 % 2]
+    [m:  8,  3+  1 % 2]
+      Voi 2 chord: end:[m:  8,  4+  0 % 1] 
+        NSingles
+          51: midi:51 step:2 alter:-1 tieStart: No trueEnd:[m:  8,   4 % 1]
+    [m:  8,  4+  0 % 1]
+      Voi 2 chord: end:[m:  8,  4+  1 % 2] 
+        NSingles
+          59: midi:59 step:6 alter: 0 tieStart: No trueEnd:[m:  8,   9 % 2]
+    [m:  8,  4+  1 % 2]
+      Voi 2 chord: end:[m:  9,  1+  0 % 1] 
+        NSingles
+          46: midi:46 step:6 alter:-1 tieStart: No trueEnd:[m:  9,   1 % 1]
+    [m:  9,  1+  0 % 1]
+      Voi 1 chord: end:[m:  9,  1+  1 % 2] 
+        NSingles
+          51: midi:51 step:2 alter:-1 tieStart: No trueEnd:[m:  9,   3 % 2]
+    [m:  9,  1+  1 % 2]
+      Voi 1 chord: end:[m:  9,  2+  0 % 1] 
+        NSingles
+          56: midi:56 step:4 alter: 1 tieStart: No trueEnd:[m:  9,   2 % 1]
+    [m:  9,  2+  0 % 1]
+      Voi 1 chord: end:[m:  9,  2+  1 % 2] 
+        NSingles
+          46: midi:46 step:6 alter:-1 tieStart: No trueEnd:[m:  9,   5 % 2]
+    [m:  9,  2+  1 % 2]
+      Voi 1 chord: end:[m:  9,  3+  0 % 1]  Staccato Accent
+        NSingles
+          51: midi:51 step:2 alter:-1 tieStart: No trueEnd:[m:  9,   3 % 1]
+    [m:  9,  3+  1 % 2]
+      Voi 1 chord: end:[m:  9,  4+  0 % 1] 
+        NSingles
+          59: midi:59 step:6 alter: 0 tieStart: No trueEnd:[m:  9,   4 % 1]
+    [m:  9,  4+  0 % 1]
+      Voi 1 chord: end:[m:  9,  4+  1 % 2] 
+        NSingles
+          63: midi:63 step:2 alter:-1 tieStart: No trueEnd:[m:  9,   9 % 2]
+    [m:  9,  4+  1 % 2]
+      Voi 1 chord: end:[m: 10,  1+  0 % 1] 
+        NSingles
+          67: midi:67 step:4 alter: 0 tieStart: No trueEnd:[m: 10,   1 % 1]
+    [m: 10,  1+  0 % 1]
+      Voi 1 chord: end:[m: 10,  1+  1 % 2] 
+        NSingles
+          68: midi:68 step:4 alter: 1 tieStart: No trueEnd:[m: 10,   3 % 2]
+    [m: 10,  1+  1 % 2]
+      Voi 1 chord: end:[m: 10,  2+  0 % 1] 
+        NSingles
+          70: midi:70 step:6 alter:-1 tieStart: No trueEnd:[m: 10,   2 % 1]
+          74: midi:74 step:1 alter: 0 tieStart: No trueEnd:[m: 10,   2 % 1]
+    [m: 10,  2+  0 % 1]
+      Voi 1 chord: end:[m: 10,  2+  1 % 2]  Staccato
+        NSingles
+          71: midi:71 step:6 alter: 0 tieStart: No trueEnd:[m: 10,   5 % 2]
+          75: midi:75 step:1 alter: 1 tieStart: No trueEnd:[m: 10,   5 % 2]
+    [m: 10,  2+  1 % 2]
+      Voi 1 chord: end:[m: 10,  3+  0 % 1] 
+        NSingles
+          63: midi:63 step:2 alter:-1 tieStart: No trueEnd:[m: 10,   3 % 1]
+    [m: 10,  3+  0 % 1]
+      Voi 1 chord: end:[m: 10,  3+  1 % 2] 
+        NSingles
+          68: midi:68 step:4 alter: 1 tieStart: No trueEnd:[m: 10,   7 % 2]
+    [m: 10,  3+  1 % 2]
+      Voi 1 chord: end:[m: 10,  4+  0 % 1] 
+        NSingles
+          67: midi:67 step:4 alter: 0 tieStart: No trueEnd:[m: 10,   4 % 1]
+    [m: 10,  4+  0 % 1]
+      Voi 1 chord: end:[m: 10,  4+  1 % 2] 
+        NSingles
+          59: midi:59 step:6 alter: 0 tieStart: No trueEnd:[m: 10,   9 % 2]
+    [m: 10,  4+  1 % 2]
+      Voi 1 chord: end:[m: 11,  1+  0 % 1] 
+        NSingles
+          64: midi:64 step:2 alter: 0 tieStart: No trueEnd:[m: 11,   1 % 1]
+    [m: 11,  1+  0 % 1]
+      Voi 1 chord: end:[m: 11,  1+  1 % 2] 
+        NSingles
+          62: midi:62 step:1 alter: 0 tieStart: No trueEnd:[m: 11,   3 % 2]
+    [m: 11,  1+  1 % 2]
+      Voi 1 chord: end:[m: 11,  2+  0 % 1] 
+        NSingles
+          61: midi:61 step:0 alter: 1 tieStart: No trueEnd:[m: 11,   2 % 1]
+    [m: 11,  2+  0 % 1]
+      Voi 1 chord: end:[m: 11,  2+  1 % 2] 
+        NSingles
+          67: midi:67 step:4 alter: 0 tieStart: No trueEnd:[m: 11,   5 % 2]

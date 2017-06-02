@@ -1,0 +1,15 @@
+2005-12-27 19:52:30 UTC|voice_recognition.el~|c:\users\mike\crit-done-moving\Lisp|
+2005-12-27 23:42:38 UTC|voice_recognition.el|c:\users\mike\crit-done-moving\Lisp|
+2006-06-28 05:38:59 UTC|quickpick.el~|c:\users\mike\crit-done-moving\Lisp|
+2013-07-19 06:38:42 UTC|quickpick.el|c:\users\mike\crit-done-moving\Lisp|
+2005-12-27 19:53:02 UTC|pick_list.el|c:\users\mike\crit-done-moving\Lisp|
+2005-12-27 19:52:48 UTC|implement_picklists.el|c:\users\mike\crit-done-moving\Lisp|
+2005-12-27 19:53:18 UTC|general.el~|c:\users\mike\crit-done-moving\Lisp|
+2006-04-06 08:00:11 UTC|general.el|c:\users\mike\crit-done-moving\Lisp|
+2005-10-07 22:44:38 UTC|chord_maps2.el|c:\users\mike\crit-done-moving\Lisp|
+2005-10-07 22:44:38 UTC|chord_keys4.el|c:\users\mike\crit-done-moving\Lisp|
+2005-10-07 22:44:38 UTC|chord_keys3.el|c:\users\mike\crit-done-moving\Lisp|
+2005-10-07 22:44:38 UTC|chord_keys2.el|c:\users\mike\crit-done-moving\Lisp|
+2005-10-07 22:44:38 UTC|chord_keys1.el|c:\users\mike\crit-done-moving\Lisp|
+2005-10-07 22:44:38 UTC|chords2.el~|c:\users\mike\crit-done-moving\Lisp|
+2005-10-10 07:57:44 UTC|chords2.el|c:\users\mike\crit-done-moving\Lisp|

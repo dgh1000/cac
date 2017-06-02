@@ -1,0 +1,90 @@
+
+This is a document describing all the types of "expression" that can
+applied to a PerfDoc (ways of screwing with time and dynamics and
+accents)
+
+There are two types: "commands" in the config file, and 
+"always-applied". "commands" are executed first, causing the PerfDoc
+to be modified. Then "always-applied" are executed.
+
+-----
+Commands:
+  all of the documentation of commands is in
+  App.CsoundPlayer.ParseConfig.hs 
+
+---
+always-applied
+
+  prePause: a place in the score is marked, and a pause of the given
+  length (length is specified in beats) 
+
+  syntax of score marking: "PP <floating-point number of beats>" 
+
+  example "PP 0.5"  or "PP0.5"
+
+  Note that the pause comes at the very end of the beat BEFORE the
+  marking
+
+-----
+
+sustain pedal:
+
+  old version was:
+    expressive text to indicate sustain pedal down: "SusDn"
+    expressive text to indicate sustain pedal up: "SusUp"
+
+  new version
+    uses pedal lines. 
+
+    question: to make pedal up/downs, which line segments should be
+      used? 
+
+      the requirement from the point of view of how the haskell app 
+      operates is that a pedal up/down should occur after the
+      previous notes that must stop sounding and within 
+      the earliest notes that need to be sustained.
+
+      the *visual* requirement for placing pedal lines so that they
+      look correct in the score is that the pedal up/down jog should be
+      placed approximately under the earliest notes that need to be
+      sustained.
+
+      so this leads to the following rules
+
+          for a pedal line that has no pedal up/downs, easy. 
+
+             align the beginning of it visually near the beginning of
+             the notes (probably a little toward the middle of the
+             note) and the end of it visually near the end of the
+             notes (probably a little back toward the middle of the
+             note)
+
+          for a pedal down that has multiple up/down segments:
+
+             FIRST segment is a vertical line at the start, and ending
+             in an up/down
+
+             SUBSEQUENT segments are nothing at the start, and ending
+             in an up/down
+
+             FINAL segment is nothing at the start, ending in a
+             vertical
+
+             
+
+
+-----
+
+rit. accel.
+
+  it will read these text markings exactly as those strings: "rit."
+  "accel." it looks for another text marking "GT<target tempo" that
+  following the rit. or accel. in order to find the goal tempo and
+  ending of the rit./accel.
+
+  for example,
+     GT60
+
+  it actually treats rit. and accel. as equivalent markings.. whether
+  something speeds up or slows down depends entirely on the goal tempo
+

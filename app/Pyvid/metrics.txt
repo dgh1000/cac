@@ -1,0 +1,3 @@
+top:-18 left:0 bottom:4 right:47
+top:-18 left:0 bottom:4 right:50
+top:-21 left:0 bottom:5 right:52

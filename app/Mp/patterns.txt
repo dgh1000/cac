@@ -1,0 +1,4 @@
+pattern data
+  [m:  1,  1+  0 % 1]: dyn:   0.000 tempo:   1.000
+  [m:  2,  1+  0 % 1]: dyn:   0.000 tempo:   1.000
+  [m:  3,  1+  0 % 1]: dyn:   0.000 tempo:   1.000

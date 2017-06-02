@@ -1,0 +1,62 @@
+
+ALL
+
+  staffData
+
+      "loudness"
+
+        voice number
+
+          VCurve (time to loudness)
+
+
+
+piano
+
+  staffData
+
+    staffName
+
+      "marks"  : VStringMap (String -> VLocMap, Loc -> shapes)
+ 
+        "tremShapes" : VLocMap (to trill shape mark)
+
+        "trillShapes" : VLocMap (to a trill shape mark)
+
+        "stac" : VLocMap (to double)
+
+  metaData
+
+    metaName 
+
+      "arp" : VLocMap (to double)
+
+quantum leap
+
+
+  staffData
+
+
+    staffName
+
+      "marks"  : VStringMap (String -> VLocMap, Loc -> shapes)
+
+        "arts"  : Loc -> articulation mark
+
+      "dests" : VStringMap (of articulation name to VDest)
+
+      
+
+  metaData
+
+    metaName
+
+      "keyswitchMap"  (String to Int: score art. string to keyswitch pitch)
+
+
+
+
+    
+
+
+    

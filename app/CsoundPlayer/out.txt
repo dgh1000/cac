@@ -1,0 +1,217 @@
+Doc:
+  Parts:
+    Part P1:
+      PartInfo:
+        Id: P1-I1 Chan: 1
+      Part:
+        MeasureInfo's:
+          MeasureInfo 
+            time sig: 4/4
+            tempo: Just 75.0
+          MeasureInfo 
+            time sig: 4/4
+            tempo: Nothing
+          MeasureInfo 
+            time sig: 4/4
+            tempo: Nothing
+          MeasureInfo 
+            time sig: 4/4
+            tempo: Nothing
+        Notes:
+          Notes at Loc msr:1 beat:1 % 1
+            Note:
+              Pitch midi:64 step:2 alt:0 oct:4
+              End: Loc msr:1 beat:3 % 2
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:1 beat:3 % 2
+            Note:
+              Pitch midi:65 step:3 alt:0 oct:4
+              End: Loc msr:1 beat:2 % 1
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:1 beat:2 % 1
+            Note:
+              Pitch midi:67 step:4 alt:0 oct:4
+              End: Loc msr:1 beat:5 % 2
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:1 beat:5 % 2
+            Note:
+              Pitch midi:69 step:5 alt:0 oct:4
+              End: Loc msr:1 beat:3 % 1
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:1 beat:3 % 1
+            Note:
+              Pitch midi:71 step:6 alt:0 oct:4
+              End: Loc msr:1 beat:7 % 2
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:1 beat:7 % 2
+            Note:
+              Pitch midi:72 step:0 alt:0 oct:5
+              End: Loc msr:1 beat:4 % 1
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:1 beat:4 % 1
+            Note:
+              Pitch midi:74 step:1 alt:0 oct:5
+              End: Loc msr:1 beat:9 % 2
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:1 beat:9 % 2
+            Note:
+              Pitch midi:76 step:2 alt:0 oct:5
+              End: Loc msr:2 beat:1 % 1
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:2 beat:1 % 1
+            Note:
+              Pitch midi:77 step:3 alt:0 oct:5
+              End: Loc msr:2 beat:3 % 2
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:2 beat:3 % 2
+            Note:
+              Pitch midi:76 step:2 alt:0 oct:5
+              End: Loc msr:2 beat:2 % 1
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:2 beat:2 % 1
+            Note:
+              Pitch midi:74 step:1 alt:0 oct:5
+              End: Loc msr:2 beat:5 % 2
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:2 beat:5 % 2
+            Note:
+              Pitch midi:72 step:0 alt:0 oct:5
+              End: Loc msr:2 beat:3 % 1
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:2 beat:3 % 1
+            Note:
+              Pitch midi:71 step:6 alt:0 oct:4
+              End: Loc msr:2 beat:7 % 2
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:2 beat:7 % 2
+            Note:
+              Pitch midi:69 step:5 alt:0 oct:4
+              End: Loc msr:2 beat:4 % 1
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:2 beat:4 % 1
+            Note:
+              Pitch midi:67 step:4 alt:0 oct:4
+              End: Loc msr:2 beat:9 % 2
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:2 beat:9 % 2
+            Note:
+              Pitch midi:65 step:3 alt:0 oct:4
+              End: Loc msr:3 beat:1 % 1
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:3 beat:1 % 1
+            Note:
+              Pitch midi:64 step:2 alt:0 oct:4
+              End: Loc msr:3 beat:3 % 2
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:3 beat:3 % 2
+            Note:
+              Pitch midi:65 step:3 alt:0 oct:4
+              End: Loc msr:3 beat:2 % 1
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:3 beat:2 % 1
+            Note:
+              Pitch midi:67 step:4 alt:0 oct:4
+              End: Loc msr:3 beat:5 % 2
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:3 beat:5 % 2
+            Note:
+              Pitch midi:69 step:5 alt:0 oct:4
+              End: Loc msr:3 beat:3 % 1
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:3 beat:3 % 1
+            Note:
+              Pitch midi:71 step:6 alt:0 oct:4
+              End: Loc msr:3 beat:7 % 2
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:3 beat:7 % 2
+            Note:
+              Pitch midi:72 step:0 alt:0 oct:5
+              End: Loc msr:3 beat:4 % 1
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:3 beat:4 % 1
+            Note:
+              Pitch midi:74 step:1 alt:0 oct:5
+              End: Loc msr:3 beat:9 % 2
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+          Notes at Loc msr:3 beat:9 % 2
+            Note:
+              Pitch midi:76 step:2 alt:0 oct:5
+              End: Loc msr:4 beat:1 % 1
+              Id: Nothing
+              Tie start/stop: False False
+              Slur notations: 
+              Ornaments: 
+        Slurs:
+        Wedges:
+          At: Loc msr:1 beat:2 % 1
+            type: crescendo  end: Loc msr:3 beat:7 % 2
+        Words: <words> in <direction> element:

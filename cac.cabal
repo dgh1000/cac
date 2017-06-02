@@ -1,0 +1,93 @@
+name:                cac
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/Mike/cac#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Mike
+maintainer:          michaelmossey@gmail.com
+copyright:           2017
+category:            programming
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Common.CommonData
+                     , Common.CommonUtil
+                     , Util.Exception
+                     , Util.Showable
+                     , Util.FileUtil
+                     , Util.Map
+                     , Util.Math
+                     , Util.UtilData
+                     , Util.Parse
+                     , Score.ShowScore
+                     , Score.ScoreData
+                     , Score.ScoreExport
+                     , Score.XmlToScore
+                     , Score.ParseMarks
+                     , Instruments.Piano_examples
+                     , Instruments.InstrumentsData
+                     , Instruments.ToMidi
+                     , Instruments.ApplyTimeMod
+                     , Instruments.Curves
+                     , Instruments.Dynamics
+                     , Instruments.ShowInstruments
+                     , Instruments.InstrUtils
+                     , Instruments.TimeMap
+                     , Instruments.ToUnitTimeMods
+                     , Instruments.Trill
+                     , Instruments.AlterTimes
+                     , Instruments.Piano
+                     , Instruments.RunOnce
+                     , XmlDoc.XmlDocData
+                     , XmlDoc.ParseXml
+                     , XmlDoc.Process
+                     , XmlDoc.XmlDocExport
+                     , Midi.MidiData
+                     , Mp.ParseCommandLine
+                     , Mp.MpData
+                     , Translation.TranslationData
+                     , Midi.Interface
+  build-depends:       base >= 4.7 && < 5
+                     , containers
+                     , array
+                     , mtl
+                     , deepseq
+                     , random
+                     , bytestring
+                     , directory
+                     , filepath
+                     , xml
+                     , parsec
+                     , PortMidi
+  default-language:    Haskell2010
+
+executable spawnMp
+  hs-source-dirs:      app/Mp
+  main-is:             spawnMp.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , cac
+                     , parsec
+                     , haskeline
+                     , process
+                     , filepath
+  default-language:    Haskell2010
+
+
+test-suite cac-test
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test
+  main-is:             Spec.hs
+  build-depends:       base
+                     , cac
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/Mike/cac

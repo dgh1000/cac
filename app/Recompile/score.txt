@@ -1,0 +1,92 @@
+Score
+Marks
+  [m:  1,  1+  0 % 1]
+    Piano-staff1
+      SetTempo 120.0
+  [m:  1,  2+  0 % 1]
+    Piano-staff1
+      ArpDelta 5.0e-2
+  [m:  2,  4+  0 % 1]
+    Piano-staff1
+      RitAccel
+  [m:  3,  1+  0 % 1]
+    Piano-staff1
+      SetTempo 60.0
+Staves
+  Piano-staff1
+    Dynamics
+      [m:  2,  1+  0 % 1]
+        SimpleDyn  6 voice:1
+    Hairpins
+    Pedal events
+    max true end: [m:  5,  4+  0 % 1]
+    slurs
+    [m:  1,  1+  0 % 1]
+      Voi 1 chord: end:[m:  1,  3+  0 % 1] 
+        NSingles
+          72: midi:72 step:0 alter: 0 tieStart: No trueEnd:[m:  1,   3 % 1]
+    [m:  2,  1+  0 % 1]
+      Voi 1 chord: end:[m:  2,  2+  0 % 1]  Arpeggiate
+        NSingles
+          67: midi:67 step:4 alter: 0 tieStart: No trueEnd:[m:  2,   2 % 1]
+          71: midi:71 step:6 alter: 0 tieStart: No trueEnd:[m:  2,   2 % 1]
+    [m:  2,  2+  0 % 1]
+      Voi 1 chord: end:[m:  2,  3+  0 % 1] 
+        NSingles
+          67: midi:67 step:4 alter: 0 tieStart: No trueEnd:[m:  2,   3 % 1]
+          71: midi:71 step:6 alter: 0 tieStart: No trueEnd:[m:  2,   3 % 1]
+    [m:  2,  3+  0 % 1]
+      Voi 1 chord: end:[m:  2,  4+  0 % 1] 
+        NSingles
+          71: midi:71 step:6 alter: 0 tieStart: No trueEnd:[m:  2,   4 % 1]
+    [m:  2,  4+  0 % 1]
+      Voi 1 chord: end:[m:  3,  1+  0 % 1] 
+        NSingles
+          69: midi:69 step:5 alter: 0 tieStart: No trueEnd:[m:  3,   1 % 1]
+    [m:  3,  1+  0 % 1]
+      Voi 1 chord: end:[m:  3,  2+  0 % 1] 
+        NSingles
+          69: midi:69 step:5 alter: 0 tieStart: No trueEnd:[m:  3,   2 % 1]
+    [m:  5,  1+  0 % 1]
+      Voi 1 chord: end:[m:  5,  2+  0 % 1] 
+        NSingles
+          72: midi:72 step:0 alter: 0 tieStart: No trueEnd:[m:  5,   2 % 1]
+    [m:  5,  2+  0 % 1]
+      Voi 1 chord: end:[m:  5,  3+  0 % 1] 
+        NSingles
+          72: midi:72 step:0 alter: 0 tieStart: No trueEnd:[m:  5,   3 % 1]
+    [m:  5,  3+  0 % 1]
+      Voi 1 chord: end:[m:  5,  4+  0 % 1] 
+        NSingles
+          72: midi:72 step:0 alter: 0 tieStart: No trueEnd:[m:  5,   4 % 1]
+  Piano-staff2
+    Dynamics
+      [m:  2,  1+  0 % 1]
+        SimpleDyn  6 voice:1
+    Hairpins
+    Pedal events
+    max true end: [m:  3,  2+  0 % 1]
+    slurs
+    [m:  2,  1+  0 % 1]
+      Voi 1 chord: end:[m:  2,  2+  0 % 1] 
+        NSingles
+          62: midi:62 step:1 alter: 0 tieStart: No trueEnd:[m:  2,   2 % 1]
+    [m:  2,  2+  0 % 1]
+      Voi 1 chord: end:[m:  2,  3+  0 % 1] 
+        NSingles
+          60: midi:60 step:0 alter: 0 tieStart: No trueEnd:[m:  2,   3 % 1]
+    [m:  2,  3+  0 % 1]
+      Voi 1 chord: end:[m:  2,  4+  0 % 1] 
+        NSingles
+          55: midi:55 step:4 alter: 0 tieStart: No trueEnd:[m:  2,   4 % 1]
+    [m:  2,  4+  0 % 1]
+      Voi 1 chord: end:[m:  3,  1+  0 % 1] 
+        NSingles
+          47: midi:47 step:6 alter: 0 tieStart: No trueEnd:[m:  3,   1 % 1]
+    [m:  3,  1+  0 % 1]
+      Voi 1 chord: end:[m:  3,  2+  0 % 1] 
+        NSingles
+          47: midi:47 step:6 alter: 0 tieStart: No trueEnd:[m:  3,   2 % 1]
+      Voi 2 chord: end:[m:  3,  2+  0 % 1] 
+        NSingles
+          47: midi:47 step:6 alter: 0 tieStart: No trueEnd:[m:  3,   2 % 1]

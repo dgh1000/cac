@@ -1,0 +1,25 @@
+
+Directory generate-instr has the initial experiments with routines we
+ use to generate binary files wilth LoadedInstrConfig in order to run
+ the gen-10 waveform-based imitative playback. This involves anlyzing
+ the source samples.
+
+
+
+
+
+
+
+
+
+
+------- OLD
+
+
+we want to imitate timbre, some of this can be automatic, some of it
+plot. let's try generating plots of time slices of 
+
+- run pvs to generate tables
+
+- convert each table timeslice to a gnuplot using histogram approach
+

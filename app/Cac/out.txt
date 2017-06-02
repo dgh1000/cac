@@ -1,0 +1,26 @@
+Comp:
+  Test phrases:
+  Voices:
+    Voice 'a'
+      Phrase:   0
+      phrase with begOffset=  0.001
+        time:    0.0000 pitch:80
+        time:    0.2512 pitch:66
+        time:    0.3702 pitch:85
+        time:    0.6897 pitch:51
+        time:    1.0020 pitch:74
+        time:    1.3464 pitch:43
+        time:    1.7649 pitch:88
+        time:    1.9854 pitch:67
+        time:    2.0971 pitch:33
+        time:    2.4168 pitch:42
+        time:    2.9112 pitch:82
+        time:    3.0835 pitch:76
+        time:    3.2265 pitch:44
+        time:    3.3966 pitch:31
+        time:    3.6110 pitch:49
+        time:    3.7972 pitch:42
+        time:    4.1482 pitch:65
+        time:    4.6457 pitch:77
+        time:    5.0282 pitch:53
+        time:    5.4697 pitch:49

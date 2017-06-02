@@ -1,0 +1,22 @@
+module XmlDoc.XmlDocExport
+  ( XScore(..)
+  , XPartInfo(..)
+  , XPart(..)
+  , XMsr(..)
+  , XMsrAttr(..)
+  , XMsrData(..)
+  , XDirection(..)
+  , XNote(..)
+  , XNotation(..)
+  , XArticulation(..)
+  , XOrnament(..)
+  , TremoloType(..)
+  , XPitch(..)
+  , XTechnical(..)
+  , XNotehead(..)
+  , IXMsrInfo(..)
+  , WedgeType(..)
+  , TestPart(..)
+  ) where
+
+import XmlDoc.XmlDocData

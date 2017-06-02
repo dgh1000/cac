@@ -1,0 +1,7 @@
+x=csound -d  -W -o \Users\Mike\out.wav synth1.orc test_synth1.sco
+p=csound \haskell\Util\softsynth\playback.csd
+gmp=cd \haskell\app\mp
+gsynth=cd \haskell\util\softsynth
+make=ghc --make -i\haskell mp
+lm=doskey /macrofile=\haskell\util\softsynth\macros.txt
+

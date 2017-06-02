@@ -1,0 +1,12 @@
+<CsoundSynthesizer>
+<CsOptions>
+-oout.wav -W
+</CsOptions>
+<CsInstruments>
+sr=44100
+ksmps=10
+nchnls=2
+gi_sin ftgen 0, 0, 8192, 10, 1
+gi_outTab1 ftgen 0, 0, 131072, -7, 0, 131072, 0
+gi_outTab2 ftgen 0, 0, 131072, -7, 0, 131072, 0
+gi_outTab3 ftgen 0, 0, 131072, -7, 0, 131072, 0

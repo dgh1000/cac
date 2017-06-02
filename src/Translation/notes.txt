@@ -1,0 +1,512 @@
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+                       January 2017
+
+pedal events
+
+  these aren't score objects. 
+
+  we generate the notes by looking at all ScoreObjects within the measure
+  range. how do we decide what pedal events to generate
+
+  first, generate event at every point pedal changes from down to up or vice
+  versa
+
+  need an initial pedal event that matches last pedal event in the score
+  before the start measure
+
+  we need a final pedal up. 
+
+    if the last note of the played-back measure region is at L, we need to
+    include the first pedal up in the score past L. 
+
+continuous curves
+
+  what are the sources of curve data?
+
+    loudness
+
+    custom Haskell code
+
+  what are target channels for curve data?
+
+    mod
+
+    volume (important in QL)
+
+    expression (important in QL)
+
+    Moog custom-defined controls
+
+  algorithms
+
+legato overlap in ql meta instrument: the needed overlap could depend on a lot
+of factors. we may need a richer configuration. the instrument may want to
+consider whether a note is under a slur. the q.l. instruments "legato" or
+"portamento" modes may be on. portamento speed may be any number of
+things. the instrument may want to send a modifier to turn legato on or off.
+
+
+
+ 
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+--      translate Marks to UnitPause and UnitRamp and UnitWarp
+
+-- translation algorithms: Mark -> UnitTimeMod
+--
+--   Pause <quarters>   at loc1
+-- 
+--     UnitPause <slice Loc prior to loc1> <quarters>
+--
+--   MultPause n dur    at loc1
+--
+--     series of (UnitPause <loc> <double>) where locs are determined by
+--     subtracting one beat from <loc1> and going back 'n-1' locs for total of
+--     'n' UnitPauses, then finding prior slice for each loc. durs are
+--     arithmetic sequence
+--
+--   RitPause <tempo ratio1> <tempo ratio2> <rit time span> <pause dur>)
+--   at loc2
+--
+--     Find loc1 by subtracting <rit time span> from loc2. Find loc3 by adding
+--     same span to loc2.
+--   
+--     Output is [UnitRamp loc1 loc2 1 ratio1, UnitRamp loc2 loc3 ratio2 1]
+--     and UnitPause locP <pause dur> where locP is prior slice to loc2
+--
+--   RampBeg   at loc1
+--
+--     UnitRamp <loc1> <end loc> <start ratio> <end ratio>
+--
+--       <end loc> is Loc of X, where X is the next RampEndBeg or
+--       RampEnd. <end ratio> is specified in X.
+--
+--   RampEndBeg  at loc1
+-- 
+--     UnitRamp <loc1> <end loc> <start ratio> <end ratio>
+--
+--       <end loc> is Loc of X, where X is next RampEndBeg or RampEnd. <end
+--       ratio> is specified in X
+--
+--   RitAccel   at loc1
+--
+--     UnitRamp <loc1> <loc2> 1 <end ratio>
+--
+--       loc2 is Loc of next SetTempo. <end ratio> is X/Y where X is previous
+--       SetTempo and Y is next SetTempo
+--
+--   Warp   <global flag>  <amount specifier>  <left flag>  <right flag>
+--          <amount of warp>   <direction multiplier>
+--     at loc2
+--
+--     <amount specifier> is either WarpW or (WarpWidth <# of quarters>)
+--     
+--       if <left flag>, then loc1 is defined from this
+--
+--       if <right flag>, then loc3 is defined from this
+--
+--     output
+--
+--       if loc1 is defined, then loc2-loc1 is computed, then from amount of
+--       warp and direction multiplier a computation of warp ratio R1 is done
+-- 
+--         then: UnitWarp loc1 loc2 R1
+--
+--       if loc3 is defined, compute loc3-loc2, and R3
+--
+--         then: UnitWarp loc2 loc3 R3
+--
+--  AbsWarp  <side>  <amount in quarters>   at loc1
+--
+--    finds loc2 by looking on the given side for a w
+--
+--    determines |loc2-loc1|, compares to <amount in quarters> to determine
+--    ratio R. Output is
+--
+--      UnitWarp loc1 loc2 R
+--
+-- 
+--
+-- Okay so we create a list of Marks, but in 
+    
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+
+jumping to endings or slicing out parts. Okay what are we going to do.
+
+what are the sources of sound? notes. notes might get cut.
+
+   at what point should modification happen. Simplest thing is to generate all
+   the music in midi, then shift midi times. 
+
+   Cut from A to B.
+
+   Cut past C.
+
+
+what is alteration of sound? controllers. pedal. etc. 
+
+algorithm for cutting out segment of MIDI
+
+go event by event. start with knowing we cut from Locs C_b to C_e. 
+
+Infomation:  C_b, C_e: For all cases, know cut interval beginning and ending
+
+  Note events
+
+    Information: C_bs, C_es: for all types of events, we'll know which staff
+      it is from and can compute C_b and C_e in seconds
+
+    Normal: 
+
+      N_b, N_e, N_bs, N_es: note begin/end locs and seconds
+
+      Cases: 
+
+        N_e <= C_b: Note occurs entirely before cut interval. Do not alter
+                    note.
+
+        N_b < C_b && N_e > C_b: Note starts before cut interval and intersects
+                                it. Truncate note.
+
+           Change end loc to C_b, end time to C_bs, and mark 'trunc flag' as
+           True 
+
+        N_b >= C_b && N_b < C_e: Note starts some place inside cut
+                                 interval. Eliminate note.
+
+        N_b >= C_b: Note starts past cut interval. Shift.
+
+           new begin time = N_bs - (C_es - C_bs)
+           new end time   = N_es - (C_es - C_es)
+           set "was shifted" flag
+
+    TrillTrem
+
+      Information: these have times just in seconds, N_bs and N_es. These are
+      treated more simply.. if the note is entirely before the cut interval,
+      it is kept. If it is entirely after, it is shifted. Otherwise it is
+      dropped. 
+
+  Control events
+
+      These occur at a single time t. If t < C_bs or t >= C_es keep it. If t
+      >= C_es then subtract (C_es - C_bs)
+
+Healing:
+
+  For each channel
+
+    For each Normal note event, if we find one that was trucated, we take its
+    N_es = X and check if a following Normal note has N_bs =Y close to X. If
+    they have the same pitch, then we merge them by deleting the second one
+    and setting end time of first note equal to end time of second
+    one. Keyswitches/modifiers are left in place in the first note, and
+    ignored in the second note.
+
+
+
+
+
+
+
+{-
+
+----------------------------------------------------------------------
+         What's involved in converting a note to midi? 
+
+First a note on determining channel. 
+
+   The notes from a chord, whether single notes, trills, or a double tremolo,
+   all go to the same channel. That channel is determined by articulations on
+   the chord and technique text which applies to the chord at that Loc. 
+
+0. In all cases, determine channel. Consider:
+
+    a. Chord articulations
+
+    b. Technique text
+
+    c. Trills and double tremolos may go to a specific channel.
+
+1. Case of a chord without a trill or double tremolo marking. 
+
+    a. pitch (usually just the midi pitch in the Notes field, but can be
+       altered by harmonics and a transposition command)
+
+    b. determine time on/off
+
+       - time off decreased because of staccato or staccatissimo? randomly?
+
+       - time off decreased because same pitch is repeated next?
+
+       - time off extended for legato effect or expressive effect? randomly?
+
+       - begin time altered for expressive effect? randomly?
+
+       - begin time altered for arpeggio?
+
+       - both begin and end times altered because it's a grace note?
+
+    c. determine velocity. 
+
+       - for some instruments this comes from loudness, determined by reading
+         the loudness curve at the begin loc of the chord
+
+       - for some instruments, it doesn't affect anything and therefore is
+         fixed at some constant
+
+       - for Garritan, I think velocity affects a kind of accent or speed of
+         attack, so it might be increased for short or repeated notes
+
+    d. determine modifier events (keyswitches or controller values)
+
+       - single tremolo in XSample needs keyswitch
+
+       - Garritan string technique needs keyswitch
+
+       - legato in Quantum leap needs control event
+
+2. Case of a chord will a trill or tremolo, that is NOT handled by a trill
+   channel a la Quantum leap and not handled by trill keyswitch a la Garritan
+
+   a. pitches: group of "first pitches" and "second pitches" must be
+      determined. This will be a fixed algorithm for every instrument, as I
+      can't think of a reason an instrument would need to handle the pitch
+      determination specially
+
+   b1. time the trill starts and time the trill stops: these will be a simple
+      mapping of Loc to time using the Staff's time map, a fixed algorithm
+      for every instrument.
+
+   b2. begin and end time of each trill note
+
+      - need to know trill rate. might read it from configuration, hard-coded
+        in the instrument, or in technique text. instruments will determine
+        the trill rate.
+
+      - individual notes will be laid out in time in a regular manner, with
+        their duration adjusted up or down slightly so that an even number of
+        them fit the span of the trill. This is a fixed algorithm.
+
+   c. velocity of each note in the trill
+
+      - for some instruments, velocity has no effect so it will be fixed at
+        64 or something
+
+      - for some instruments, comes from the loudness curve. first note in
+        the trill will be read at a Loc, while remaining notes will be read
+        at seconds.
+
+      - for Garritan, might want to adjust based on trill note duration
+
+   d. modifier events (keyswitches or controller values)
+
+      - Garritan: might want to use trill keyswitch--this requires creating
+        evenly spaced on/off notes
+
+
+3. trill handled by trill channel in Quantum--this is similar to single note
+   case, except maybe tBeg and tEnd are a straight mapping of the begin and
+   end Loc
+
+----------------------------------------------------------------------
+                      What affects loudness?
+
+  - dynamics and hairpins
+
+  - accents
+
+  - something extra for short notes
+
+So the master instrument will look up loudness from dynamics and hairpins,
+then pass that to the instrument for constructing accent and short note
+loudness curves, which returns them.
+
+
+-}
+
+
+
+scoreToMidi :: Score -> [MidiEvent]
+scoreToMidi score = 
+  where
+    chordKeys = concatMap (staffChords score) . getStaves $ score
+
+
+chordKeyToMidi :: ChordKey -> [MidiEvent]
+chordKeyToMidi chordKey
+  where
+  ch = ckChord chordKey
+  cNotes ch
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+
+
+randomizing timing
+
+  large-scale section tempo alterations are undesirable. Can provide playback
+  variety by 'ct' playback command
+
+  alterations on small scale
+
+    time versus tempo
+
+      tempo change perceived if: several notes, especially regularly spaced
+      ones that match spacing of prior notes, occur during the ramp or warp
+
+        say warp amount (the change in the overal warp interval) is D
+        seconds. (a positive or negative number). Then altering D from 0.75D to
+        1.25D should be fine.
+
+        say ramp does not affect following tempo. say that prevailing tempo
+        going into the ramp is P. first tempo of ramp is R1. final tempo of
+        ramp is R2. Consider D = R1-P. Choose D_n equal to either 7/8D, D, or
+        9/8D, then first ramp tempo is D_n + R1 and second is D_n + R2.
+
+      arrival time of note change perceived if: a warp contains mostly
+      silence, or just a few irregularly spaced notes, A pause always changes
+      arrival time of note
+
+        alterating warp delta or pause by +-25% should be okay
+
+other
+
+
+    arpeggio
+
+      adjust +-20%
+
+    staccato 
+
+      adjust +- 20%
+
+    trill shapes
+
+      two things are adjustable: length of segment, and trill rate at
+      boundaries of segments. both can be adjusted by +- 20% without likely
+      interfering with general sense of trill/tremolo
+
+what changes to code are necessary to support these changes?
+
+  pauses +/- 20%
+
+    Warp.hs:applyOnePause must be written as monadic funtion
+
+  warps
+
+    Warp.hs:oneWarp must be made into monadic function in which 'amtSecs' is
+    varied. warpOneSide can be left alone. In case of two-sided warp, we want
+    to make each call to warpOneSide with same 'amtSecs'
+
+  ramps
+
+    TimeMap:foldTempo 
+
+      call tempo maps begMap and endMap. 
+
+        begMap identifies tempos at the beginning of sections marked by T=,
+        rit/accel, ramp beg, and ramp end/beg
+
+        endMap identifies tempos at RampEnd and RampEndBeg
+
+      algorithm for constructing initial time map
+
+        uses begMap only to construct segments of constant tempo
+
+
+      does the work of processing variable sets, T=, ramp beg, end, end/beg,
+      rit/accel.
+
+      we need to identify ramps that do not change the following tempo
+
+      the tempo at the beginning of the ramp will be found in the 
+
+alternate base map construction
+
+  could I construct slice by slice and know if I'm in the middle of a ramp?
+
+  for a slice at loc L, we would check previous tempo. following tempo if it's
+  a ramp end, or constant tempo if another constant tempo follows it. 
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+
+we want to implement modification of the timing and dynamics to fit
+hierarchical patterns like "Superconductor".
+
+what patterns do we want to implement?
+
+  on what timescales?
+
+    probably two timescales: patterns spanning a measure, and patterns spanning
+    a beat.
+
+    specify patterns for time spans that are divided into 2, 3, and 4, also we
+    specify whether a measure in 6 is 2 3's or 3 2's
+
+  how do we identify whether a beat is divided into 1, 2 3, or 4?
+
+    maybe assign a score based on where note beginnings occur. look at all note
+    beginnings within a submeasure. assign each one to 1/4, 1/3, 1/2, 2/3, 3/4,
+    or none.
+
+      for each submeasure, look at note beginnings during that beat in every
+      part
+
+      looking at locations within the subm. X means looking for note beginnings
+      that occur between X-1/48 and X+1/48
+
+      1/4:  give 1 point to 4
+      1/3:  give 1 point to 3
+      1/2:  give 1 point to 2 and 0.5 point to 4
+      2/3:  1 point to 3
+      3/4:  1 point to 4
+      1/5 through 4/5: 1 point to 5
+      any note that is none of above: 0.34 points to 4
+
+      if all have 0 beats, choose 1
+
+      otherwise choose whichever has most beats. in case of ties, choose higher
+      number of divisions
+
+      what about division into 5? That is a common scenario, also consider
+      measure with 5 beats in it
+
+  how specified in config
+
+    outside any staff statement: 
+      [pattern [dynamics:2 0.0 -0.3]           [time:2 1.0 0.95]
+               [dynamics:3 0.0 -0.1 -0.3]      [time:3 1.0 0.97 0.95]
+               [dynamics:4 0.0 -0.3 -0.3 -0.4] [time:4 1.0 0.96 0.98 0.94]
+               [3/4 3] [2/4 2] [2/8 2] [6/8 2]
+      ]
+
+    no fixed order for these "dynamics" and "time" subsections. 
+
+      mp will throw an error if a section is needed but is absent
+
+    the other sections give time signatures and indicate how the measures are
+    to be divided into submeasures. 
+
+      mp will throw an error if a time sig is needed but is absent here
+
+
+
+    

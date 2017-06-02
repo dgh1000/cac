@@ -1,0 +1,22 @@
+
+re are reworking all manner of translation
+
+  major new class is Meta. it contains lots of functions and data that define
+  its behavior. it has a name, data to define it (such as a list of staves it
+  covers), functions to create loudness curves, to determine velocity of note,
+  holds state of curves and other parameters.
+
+what does translation need to do?
+
+  for all staves: create base time map
+
+  for each staff: 
+
+     create time map
+
+     create curves: at a minimum, loudness
+
+     make MIDI events
+
+       note-related: nominal timing, then put in gaps or legato extend, and
+       come up modifiers

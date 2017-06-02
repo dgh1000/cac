@@ -1,0 +1,285 @@
+
+  pitch:71 stream: 0 chan: 1 vel: 55 isShort:False
+    on/off
+            offset -26.064--   0.100    0.594
+              extend 0.100--  26.164   26.658
+                   nominal--  26.164   26.558
+    mods
+  pitch:79 stream: 0 chan: 1 vel: 56 isShort:False
+    on/off
+            offset -26.064--   0.494    0.772
+              extend 0.100--  26.558   26.836
+                   nominal--  26.558   26.736
+    mods
+  pitch:77 stream: 0 chan: 1 vel: 52 isShort:False
+    on/off
+            offset -26.064--   0.672    0.853
+                 gap 0.002--  26.736   26.916
+              extend 0.100--  26.736   27.018
+                   nominal--  26.736   26.918
+    mods
+  pitch:77 stream: 0 chan: 1 vel: 52 isShort:False
+    on/off
+            offset -26.064--   0.855    1.612
+                 gap 0.002--  26.918   27.676
+              extend 0.100--  26.918   27.778
+                   nominal--  26.918   27.678
+    mods
+  pitch:77 stream: 0 chan: 1 vel: 43 isShort:True
+    on/off
+            offset -26.064--   1.614    1.684
+                      stac--  27.678   27.748
+                   nominal--  27.678   28.072
+    mods
+  pitch:62 stream: 0 chan: 1 vel: 38 isShort:False
+    on/off
+            offset -26.064--   2.733    3.608
+              extend 0.100--  28.797   29.672
+                   nominal--  28.797   29.572
+    mods
+  pitch:59 stream: 0 chan: 1 vel: 34 isShort:False
+    on/off
+            offset -26.064--   3.508    3.964
+              extend 0.100--  29.572   30.028
+                   nominal--  29.572   29.928
+    mods
+  pitch:62 stream: 0 chan: 1 vel: 43 isShort:False
+    on/off
+            offset -26.064--   3.864    4.330
+              extend 0.100--  29.928   30.393
+                   nominal--  29.928   30.293
+    mods
+  pitch:74 stream: 0 chan: 1 vel: 55 isShort:False
+    on/off
+            offset -26.064--   4.980    5.464
+              extend 0.100--  31.043   31.528
+                   nominal--  31.043   31.428
+    mods
+  pitch:73 stream: 0 chan: 1 vel: 52 isShort:False
+    on/off
+            offset -26.064--   5.364    5.858
+              extend 0.100--  31.428   31.922
+                   nominal--  31.428   31.822
+    mods
+  pitch:71 stream: 0 chan: 1 vel: 57 isShort:False
+    on/off
+            offset -26.064--   5.758    6.214
+              extend 0.100--  31.822   32.278
+                   nominal--  31.822   32.178
+    mods
+  pitch:77 stream: 0 chan: 1 vel: 58 isShort:False
+    on/off
+            offset -26.064--   6.114    6.964
+              extend 0.100--  32.178   33.028
+                   nominal--  32.178   32.928
+    mods
+  pitch:80 stream: 0 chan: 1 vel: 66 isShort:True
+    on/off
+            offset -26.064--   6.864    6.934
+                      stac--  32.928   32.998
+                   nominal--  32.928   33.378
+    mods
+  pitch:74 stream: 0 chan: 1 vel: 37 isShort:False
+    on/off
+            offset -26.064--   7.314    7.821
+              extend 0.100--  33.378   33.885
+                   nominal--  33.378   33.785
+    mods
+  pitch:71 stream: 0 chan: 1 vel: 38 isShort:False
+    on/off
+            offset -26.064--   7.721    8.668
+              extend 0.100--  33.785   34.731
+                   nominal--  33.785   34.631
+    mods
+  pitch:70 stream: 0 chan: 1 vel: 38 isShort:False
+    on/off
+            offset -26.064--   8.568    9.107
+              extend 0.100--  34.631   35.171
+                   nominal--  34.631   35.071
+    mods
+  pitch:69 stream: 0 chan: 1 vel: 37 isShort:False
+    on/off
+            offset -26.064--   9.007    9.557
+              extend 0.100--  35.071   35.621
+                   nominal--  35.071   35.521
+    mods
+  pitch:72 stream: 0 chan: 1 vel: 32 isShort:False
+    on/off
+            offset -26.064--   9.864   10.807
+              extend 0.100--  35.928   36.871
+                   nominal--  35.928   36.771
+    mods
+  pitch:67 stream: 0 chan: 2 vel: 42 isShort:False
+    on/off
+            offset -26.064--   0.100    0.594
+              extend 0.100--  26.164   26.658
+                   nominal--  26.164   26.558
+    mods
+  pitch:68 stream: 0 chan: 2 vel: 57 isShort:True
+    on/off
+            offset -26.064--   0.855    0.925
+                      stac--  26.918   26.988
+                   nominal--  26.918   27.293
+    mods
+  pitch:71 stream: 0 chan: 2 vel: 58 isShort:True
+    on/off
+            offset -26.064--   0.855    0.925
+                      stac--  26.918   26.988
+                   nominal--  26.918   27.293
+    mods
+  pitch:70 stream: 0 chan: 2 vel: 52 isShort:True
+    on/off
+            offset -26.064--   1.230    1.300
+                      stac--  27.293   27.363
+                   nominal--  27.293   27.678
+    mods
+  pitch:74 stream: 0 chan: 2 vel: 55 isShort:True
+    on/off
+            offset -26.064--   1.230    1.300
+                      stac--  27.293   27.363
+                   nominal--  27.293   27.678
+    mods
+  pitch:71 stream: 0 chan: 2 vel: 34 isShort:True
+    on/off
+            offset -26.064--   1.614    1.684
+                      stac--  27.678   27.748
+                   nominal--  27.678   28.072
+    mods
+  pitch:51 stream: 0 chan: 2 vel: 53 isShort:False
+    on/off
+            offset -26.064--   2.008    2.464
+              extend 0.100--  28.072   28.528
+                   nominal--  28.072   28.428
+    mods
+  pitch:59 stream: 0 chan: 2 vel: 58 isShort:False
+    on/off
+            offset -26.064--   2.364    2.833
+              extend 0.100--  28.428   28.897
+                   nominal--  28.428   28.797
+    mods
+  pitch:46 stream: 0 chan: 2 vel: 56 isShort:False
+    on/off
+            offset -26.064--   2.733    3.214
+              extend 0.100--  28.797   29.278
+                   nominal--  28.797   29.178
+    mods
+  pitch:51 stream: 0 chan: 2 vel: 57 isShort:False
+    on/off
+            offset -26.064--   3.114    3.608
+              extend 0.100--  29.178   29.672
+                   nominal--  29.178   29.572
+    mods
+  pitch:56 stream: 0 chan: 2 vel: 54 isShort:False
+    on/off
+            offset -26.064--   3.508    3.964
+              extend 0.100--  29.572   30.028
+                   nominal--  29.572   29.928
+    mods
+  pitch:46 stream: 0 chan: 2 vel: 54 isShort:False
+    on/off
+            offset -26.064--   3.864    4.330
+              extend 0.100--  29.928   30.393
+                   nominal--  29.928   30.293
+    mods
+  pitch:51 stream: 0 chan: 2 vel: 68 isShort:True
+    on/off
+            offset -26.064--   4.230    4.300
+                      stac--  30.293   30.363
+                   nominal--  30.293   30.668
+    mods
+  pitch:59 stream: 0 chan: 2 vel: 46 isShort:False
+    on/off
+            offset -26.064--   4.980    5.464
+              extend 0.100--  31.043   31.528
+                   nominal--  31.043   31.428
+    mods
+  pitch:63 stream: 0 chan: 2 vel: 44 isShort:False
+    on/off
+            offset -26.064--   5.364    5.858
+              extend 0.100--  31.428   31.922
+                   nominal--  31.428   31.822
+    mods
+  pitch:67 stream: 0 chan: 2 vel: 51 isShort:False
+    on/off
+            offset -26.064--   5.758    6.214
+              extend 0.100--  31.822   32.278
+                   nominal--  31.822   32.178
+    mods
+  pitch:68 stream: 0 chan: 2 vel: 58 isShort:False
+    on/off
+            offset -26.064--   6.114    6.583
+              extend 0.100--  32.178   32.647
+                   nominal--  32.178   32.547
+    mods
+  pitch:70 stream: 0 chan: 2 vel: 58 isShort:False
+    on/off
+            offset -26.064--   6.483    6.964
+              extend 0.100--  32.547   33.028
+                   nominal--  32.547   32.928
+    mods
+  pitch:74 stream: 0 chan: 2 vel: 57 isShort:False
+    on/off
+            offset -26.064--   6.483    6.964
+              extend 0.100--  32.547   33.028
+                   nominal--  32.547   32.928
+    mods
+  pitch:71 stream: 0 chan: 2 vel: 66 isShort:True
+    on/off
+            offset -26.064--   6.864    6.934
+                      stac--  32.928   32.998
+                   nominal--  32.928   33.378
+    mods
+  pitch:75 stream: 0 chan: 2 vel: 68 isShort:True
+    on/off
+            offset -26.064--   6.864    6.934
+                      stac--  32.928   32.998
+                   nominal--  32.928   33.378
+    mods
+  pitch:63 stream: 0 chan: 2 vel: 32 isShort:False
+    on/off
+            offset -26.064--   7.314    7.821
+              extend 0.100--  33.378   33.885
+                   nominal--  33.378   33.785
+    mods
+  pitch:68 stream: 0 chan: 2 vel: 32 isShort:False
+    on/off
+            offset -26.064--   7.721    8.239
+              extend 0.100--  33.785   34.303
+                   nominal--  33.785   34.203
+    mods
+  pitch:67 stream: 0 chan: 2 vel: 37 isShort:False
+    on/off
+            offset -26.064--   8.139    8.668
+              extend 0.100--  34.203   34.731
+                   nominal--  34.203   34.631
+    mods
+  pitch:59 stream: 0 chan: 2 vel: 34 isShort:False
+    on/off
+            offset -26.064--   8.568    9.107
+              extend 0.100--  34.631   35.171
+                   nominal--  34.631   35.071
+    mods
+  pitch:64 stream: 0 chan: 2 vel: 38 isShort:False
+    on/off
+            offset -26.064--   9.007    9.557
+              extend 0.100--  35.071   35.621
+                   nominal--  35.071   35.521
+    mods
+  pitch:62 stream: 0 chan: 2 vel: 36 isShort:False
+    on/off
+            offset -26.064--   9.457    9.964
+              extend 0.100--  35.521   36.028
+                   nominal--  35.521   35.928
+    mods
+  pitch:61 stream: 0 chan: 2 vel: 36 isShort:False
+    on/off
+            offset -26.064--   9.864   10.385
+              extend 0.100--  35.928   36.449
+                   nominal--  35.928   36.349
+    mods
+  pitch:67 stream: 0 chan: 2 vel: 34 isShort:False
+    on/off
+            offset -26.064--  10.285   10.807
+              extend 0.100--  36.349   36.871
+                   nominal--  36.349   36.771
+    mods

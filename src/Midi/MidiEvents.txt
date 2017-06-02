@@ -1,0 +1,131 @@
+
+NoteEvent  (0,1) p: 69 v:111
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   32.075   32.385
+  '                       nominal'   32.075   32.285
+NoteEvent  (0,1) p: 71 v:108
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   32.285   32.575
+  '                       nominal'   32.285   32.475
+NoteEvent  (0,1) p: 69 v:112
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   32.475   32.770
+  '                       nominal'   32.475   32.670
+NoteEvent  (0,1) p: 67 v:107
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   32.670   32.970
+  '                       nominal'   32.670   32.870
+NoteEvent  (0,1) p: 69 v:109
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   32.870   33.175
+  '                       nominal'   32.870   33.075
+NoteEvent  (0,1) p: 71 v:108
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   33.075   33.385
+  '                       nominal'   33.075   33.285
+NoteEvent  (0,1) p: 72 v:110
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   33.285   33.575
+  '                       nominal'   33.285   33.475
+NoteEvent  (0,1) p: 74 v:112
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   33.475   33.770
+  '                       nominal'   33.475   33.670
+NoteEvent  (0,1) p: 72 v:112
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   33.670   34.120
+  '                       nominal'   33.670   34.020
+NoteEvent  (0,1) p: 71 v:110
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   34.020   34.479
+  '                       nominal'   34.020   34.379
+NoteEvent  (0,1) p: 69 v:110
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   34.379   34.846
+  '                       nominal'   34.379   34.746
+NoteEvent  (0,1) p: 68 v:107
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   34.746   35.179
+  '                       nominal'   34.746   35.079
+NoteEvent  (0,1) p: 69 v:109
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   35.079   35.523
+  '                       nominal'   35.079   35.423
+NoteEvent  (0,1) p: 71 v:110
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   35.423   35.879
+  '                       nominal'   35.423   35.779
+NoteEvent  (0,1) p: 69 v:107
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   35.779   36.246
+  '                       nominal'   35.779   36.146
+NoteEvent  (0,1) p: 64 v:109
+  legato:  0.100 sep same pit:       
+  '                     non stomp'   36.146   36.527
+  '                    legato ext'   36.146   36.579
+  '                       nominal'   36.146   36.479
+NoteEvent  (0,1) p: 60 v:110
+  legato:  0.100 sep same pit:       
+  '                     non stomp'   36.479   36.627
+  '                    legato ext'   36.479   36.629
+  '                       nominal'   36.479   36.529
+NoteEvent  (0,1) p: 64 v:112
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   36.529   36.681
+  '                       nominal'   36.529   36.581
+NoteEvent  (0,1) p: 62 v:108
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   36.581   36.729
+  '                       nominal'   36.581   36.629
+NoteEvent  (0,1) p: 60 v:110
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   36.629   36.777
+  '                       nominal'   36.629   36.677
+NoteEvent  (0,1) p: 65 v:109
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   36.677   36.827
+  '                       nominal'   36.677   36.727
+NoteEvent  (0,1) p: 69 v:111
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   36.727   36.877
+  '                       nominal'   36.727   36.777
+NoteEvent  (0,1) p: 72 v:107
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   36.777   36.929
+  '                       nominal'   36.777   36.829
+NoteEvent  (0,1) p: 77 v:112
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   36.829   36.981
+  '                       nominal'   36.829   36.881
+NoteEvent  (0,1) p: 59 v:110
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   36.881   37.171
+  '                       nominal'   36.881   37.071
+NoteEvent  (0,1) p: 68 v:112
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   37.071   37.365
+  '                       nominal'   37.071   37.265
+NoteEvent  (0,1) p: 66 v:110
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   37.265   37.563
+  '                       nominal'   37.265   37.463
+NoteEvent  (0,1) p: 64 v:109
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   37.463   37.765
+  '                       nominal'   37.463   37.665
+NoteEvent  (0,1) p: 69 v:107
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   37.665   37.971
+  '                       nominal'   37.665   37.871
+NoteEvent  (0,1) p: 60 v:109
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   37.871   38.181
+  '                       nominal'   37.871   38.081
+NoteEvent  (0,1) p: 57 v:107
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   38.081   38.371
+  '                       nominal'   38.081   38.271
+NoteEvent  (0,1) p: 69 v:110
+  legato:  0.100 sep same pit:       
+  '                    legato ext'   38.271   38.565
+  '                       nominal'   38.271   38.465

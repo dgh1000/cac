@@ -1,0 +1,6 @@
+2011-12-24 02:38:09 UTC|finale_custom_autoexec.ahk|c:\users\mike\crit-done-moving\ahk|
+2012-02-23 05:17:36 UTC|finale_custom.ahk~|c:\users\mike\crit-done-moving\ahk|
+2012-02-24 02:49:16 UTC|finale_custom.ahk|c:\users\mike\crit-done-moving\ahk|
+2011-12-24 02:37:50 UTC|emacs_custom_autoexec.ahk|c:\users\mike\crit-done-moving\ahk|
+2012-02-21 23:42:01 UTC|emacs_custom.ahk~|c:\users\mike\crit-done-moving\ahk|
+2015-04-12 01:55:17.1730558 UTC|emacs_custom.ahk|c:\users\mike\crit-done-moving\ahk|

@@ -1,0 +1,55 @@
+
+{ method   }
+method         i 9      { 8 is single waveform; 9 is individual partials }
+
+
+{ waveform }
+gen9TableSize  i 16385 
+rotatePhase    b True 
+modSawtoothExp d 1
+applyEq        b True
+maxFreq        d 12000 
+
+
+{ eqCurve; first point must have x>0 }
+eqCurve        c        
+  [ (1,      0 )
+    (2000,   0 )
+    (4000,  -4 )
+    (7000,  -10 )
+    (12000, -16)
+    (20000, -16)
+  ]
+
+
+{ pitch }
+tuningBase d 2.00
+
+
+{ envelopes for method 8 }
+att_8         d 0.03 
+decayDbSec_8  d 4 
+lpCo1_8       d 4000 
+lpCo2_8       d 750
+lpPhase1Dur_8 d 0.2
+lpDecOctSec_8 d 1
+release_8     d 0.15 
+lpEnd_8       d 50 
+
+{ envelopes for method 9 }
+
+scalingFreqMin d 30 
+scalingFreqMax d 10000 
+att_9_min      d 0.005   { this six min/maxes are scaled over scalingFreqMin }
+att_9_max      d 0.020   {   to scalingFreqMax                               }
+rel_9_min      d 0.050   
+rel_9_max      d 0.150 
+decay_9_min    d 3
+decay_9_max    d 45
+freqJit_9      d 0.001   { jitter amplitude on each partial as fraction of }
+                         { fundamental frequency                           }
+amplJit_9_min  d 0.001 
+amplJit_9_max  d 0.002   { ampl jitter spread logarithmically over partials }
+jitCps_9_min   d 8       { jit cps applies to both frequency and amplitude jit }
+jitCps_9_max   d 12 
+test_hp_co     d 5000

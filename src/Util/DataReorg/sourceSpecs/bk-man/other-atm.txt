@@ -1,0 +1,63 @@
+2013-11-15 20:58:47.837288 UTC|TMJ_08-The-Eye-Jaw-Connection.mp3|d:\bk-man\other-atm\TMJ-disk-3
+2013-11-15 20:58:51.7585123 UTC|TMJ_07-The-Spine-Jaw-Connection.mp3|d:\bk-man\other-atm\TMJ-disk-3
+2011-05-19 18:05:11.328125 UTC|07 Track 07.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Short Sounds
+2011-05-19 18:05:11.359375 UTC|06 Track 06.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Short Sounds
+2011-05-19 18:05:11.40625 UTC|05 Track 05.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Short Sounds
+2011-05-19 18:05:11.4375 UTC|04 Track 04.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Short Sounds
+2011-05-19 18:05:11.484375 UTC|03 Track 03.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Short Sounds
+2011-05-19 18:05:11.515625 UTC|02 Track 02.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Short Sounds
+2011-05-19 18:05:11.546875 UTC|01 Track 01.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Short Sounds
+2011-05-19 18:05:11.140625 UTC|05 Track 05.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Organizing Vowels
+2011-05-19 18:05:11.1875 UTC|04 Track 04.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Organizing Vowels
+2011-05-19 18:05:11.21875 UTC|03 Track 03.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Organizing Vowels
+2011-05-19 18:05:11.265625 UTC|02 Track 02.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Organizing Vowels
+2011-05-19 18:05:11.296875 UTC|01 Track 01.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Organizing Vowels
+2011-05-19 18:05:11.609375 UTC|06 Track 06.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Long Sounds
+2011-05-19 18:05:11.65625 UTC|05 Track 05.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Long Sounds
+2011-05-19 18:05:11.671875 UTC|04 Track 04.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Long Sounds
+2011-05-19 18:05:11.71875 UTC|03 Track 03.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Long Sounds
+2011-05-19 18:05:11.765625 UTC|02 Track 02.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Long Sounds
+2011-05-19 18:05:11.796875 UTC|01 Track 01.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Long Sounds
+2011-05-19 18:05:10.96875 UTC|05 Track 05.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Accessing Resonators
+2011-05-19 18:05:11.015625 UTC|04 Track 04.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Accessing Resonators
+2011-05-19 18:05:11.03125 UTC|03 Track 03.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Accessing Resonators
+2011-05-19 18:05:11.078125 UTC|02 Track 02.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Accessing Resonators
+2011-05-19 18:05:11.109375 UTC|01 Track 01.mp3|d:\bk-man\other-atm\Richard Corbeil\Vocal Integration_ Accessing Resonators
+2011-05-19 18:07:43.203125 UTC|Lesson 11 - Convergence Card.mp3|d:\bk-man\other-atm\Jack Heggie\Total Body Vision
+2011-05-19 18:07:43.15625 UTC|Lesson 10 - VXA exercise.mp3|d:\bk-man\other-atm\Jack Heggie\Total Body Vision
+2011-05-19 18:07:43.125 UTC|Lesson 09 - Standing and Turning Par.mp3|d:\bk-man\other-atm\Jack Heggie\Total Body Vision
+2011-05-19 18:07:43.078125 UTC|Lesson 08 - Standing and Turning Par.mp3|d:\bk-man\other-atm\Jack Heggie\Total Body Vision
+2011-05-19 18:07:42.90625 UTC|Lesson 07 - Squeezing the Eyes.mp3|d:\bk-man\other-atm\Jack Heggie\Total Body Vision
+2011-05-19 18:07:33.65625 UTC|Lesson 06 - Convergence and the Rest.mp3|d:\bk-man\other-atm\Jack Heggie\Total Body Vision
+2011-05-19 18:07:43.03125 UTC|Lesson 05 - Eyes Up and Down.mp3|d:\bk-man\other-atm\Jack Heggie\Total Body Vision
+2011-05-19 18:07:43 UTC|Lesson 04 - Eyes, Neck, and Pelvis.mp3|d:\bk-man\other-atm\Jack Heggie\Total Body Vision
+2011-05-19 18:07:42.96875 UTC|Lesson 03 - Eyes Right and Left.mp3|d:\bk-man\other-atm\Jack Heggie\Total Body Vision
+2011-05-19 18:07:42.9375 UTC|Lesson 02 - Eyes, Neck, and Shoulder.mp3|d:\bk-man\other-atm\Jack Heggie\Total Body Vision
+2011-05-19 18:07:10.09375 UTC|Lesson 01 - Standing and Turning.mp3|d:\bk-man\other-atm\Jack Heggie\Total Body Vision
+2011-05-19 18:07:10.0625 UTC|Introduction.mp3|d:\bk-man\other-atm\Jack Heggie\Total Body Vision
+2011-05-26 17:29:38.671875 UTC|05 - Follow Your Hands.mp3|d:\bk-man\other-atm\Donna Ray\Eye-Hand Coordination
+2011-05-26 17:29:50.1875 UTC|04 - Seeing Around Yourself.mp3|d:\bk-man\other-atm\Donna Ray\Eye-Hand Coordination
+2011-05-26 17:29:50.234375 UTC|03 - Look Both Ways.mp3|d:\bk-man\other-atm\Donna Ray\Eye-Hand Coordination
+2011-05-26 17:29:50.265625 UTC|02 - Looking at the Unexpected.mp3|d:\bk-man\other-atm\Donna Ray\Eye-Hand Coordination
+2011-05-26 17:29:50.3125 UTC|01 - Keep Your Eye On The Ball.mp3|d:\bk-man\other-atm\Donna Ray\Eye-Hand Coordination
+2011-05-24 06:15:16.4375 UTC|12 - Circles with elbows and shoulde.mp3|d:\bk-man\other-atm\Cliff Smyth\Easy Hands and Arms
+2011-05-24 06:15:16.390625 UTC|11 - Reaching and rolling.mp3|d:\bk-man\other-atm\Cliff Smyth\Easy Hands and Arms
+2011-05-24 06:15:16.28125 UTC|10 - Softening the wrists.mp3|d:\bk-man\other-atm\Cliff Smyth\Easy Hands and Arms
+2011-05-24 06:15:16.328125 UTC|09 - Turning the arms together and o.mp3|d:\bk-man\other-atm\Cliff Smyth\Easy Hands and Arms
+2011-05-24 06:15:16.25 UTC|08 - Easy Opening and Closing.mp3|d:\bk-man\other-atm\Cliff Smyth\Easy Hands and Arms
+2011-05-24 06:15:16.203125 UTC|07 - Shoulder and Hip Circles.mp3|d:\bk-man\other-atm\Cliff Smyth\Easy Hands and Arms
+2011-05-24 06:15:16.171875 UTC|06 - Lightly lifting the arms.mp3|d:\bk-man\other-atm\Cliff Smyth\Easy Hands and Arms
+2011-05-24 06:15:16.125 UTC|05 - Eyes & Hands.mp3|d:\bk-man\other-atm\Cliff Smyth\Easy Hands and Arms
+2011-05-24 06:15:16.09375 UTC|04 - Reaching With A Soft Hand.mp3|d:\bk-man\other-atm\Cliff Smyth\Easy Hands and Arms
+2011-05-24 06:15:16.046875 UTC|03 - Moving From Shoulders & Hips.mp3|d:\bk-man\other-atm\Cliff Smyth\Easy Hands and Arms
+2011-05-24 06:15:16 UTC|02 - Your spine supports your arms.mp3|d:\bk-man\other-atm\Cliff Smyth\Easy Hands and Arms
+2011-05-24 06:15:15.96875 UTC|01 - Turning and twisting.mp3|d:\bk-man\other-atm\Cliff Smyth\Easy Hands and Arms
+2011-05-19 18:05:41.890625 UTC|09 Track 09.mp3|d:\bk-man\other-atm\Anat Baniel\Healthy Necks_ Head Structures
+2011-05-19 18:05:41.953125 UTC|08 Track 08.mp3|d:\bk-man\other-atm\Anat Baniel\Healthy Necks_ Head Structures
+2011-05-19 18:05:41.96875 UTC|07 Track 07.mp3|d:\bk-man\other-atm\Anat Baniel\Healthy Necks_ Head Structures
+2011-05-19 18:05:42.015625 UTC|06 Track 06.mp3|d:\bk-man\other-atm\Anat Baniel\Healthy Necks_ Head Structures
+2011-05-19 18:05:42.046875 UTC|05 Track 05.mp3|d:\bk-man\other-atm\Anat Baniel\Healthy Necks_ Head Structures
+2011-05-19 18:05:42.09375 UTC|04 Track 04.mp3|d:\bk-man\other-atm\Anat Baniel\Healthy Necks_ Head Structures
+2011-05-19 18:05:42.109375 UTC|03 Track 03.mp3|d:\bk-man\other-atm\Anat Baniel\Healthy Necks_ Head Structures
+2011-05-19 18:05:42.140625 UTC|02 Track 02.mp3|d:\bk-man\other-atm\Anat Baniel\Healthy Necks_ Head Structures
+2011-05-19 18:05:42.171875 UTC|01 Track 01.mp3|d:\bk-man\other-atm\Anat Baniel\Healthy Necks_ Head Structures

@@ -1,0 +1,17 @@
+
+this directory: for analyzing samples in terms of doing pvs analysis
+and then constructing series of f-tables for playback
+
+
+system for storing spectrum analysis information:
+
+-- with each instrument directory, there will be files of type .spc
+
+-- name is prefixed with m<midiPitch>_
+
+   followed by sas : slow attack from silence
+               srs : slow release into silence
+               fas : fast attack from silence
+
+               ss  : steady-state spectrum for a given pitch
+                     (this is an encoding of Map Int Float)

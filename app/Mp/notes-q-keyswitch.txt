@@ -1,0 +1,19 @@
+
+want to start using keyswitch with QL. want things to be configurable in
+config file and score markings and IH (interpreted Haskell). don't really know
+what I need, want to try variety quickly. configure what trill uses, what
+short uses, when to extend notes. 
+
+so the score needs to indicate which keyswitch to use, the config needs to
+show that a keyswitched patch is available at a certain dest. we might also
+keep the DXF patch on another dest
+
+
+we need definition for note that is not short, not part of a trill
+
+[meta instr:qSoloCello name:c1
+  [staves "Violoncello"]
+  [dests [DXF 0 1]
+         [ks  0 2]
+  ]
+  [extend normal-amount:J:0.1
