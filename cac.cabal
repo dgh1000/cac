@@ -52,6 +52,10 @@ library
                      , Mp.MpData
                      , Translation.TranslationData
                      , Midi.Interface
+                     , Cac
+                     , Cac.Search
+                     , Comp
+                     , View
   build-depends:       base >= 4.7 && < 5
                      , containers
                      , array
